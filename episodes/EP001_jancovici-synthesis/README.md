@@ -1,121 +1,136 @@
-# EP001 — La thermodynamique de la civilisation (Jancovici synthesis)
+# EP001 — The Thermodynamics of Civilization (Jancovici synthesis)
 
-> **Épisode pilote** de MindClash.
-> Premier épisode test de la chaîne YouTube.
+> **Pilot episode** of MindClash.
+> First test of the YouTube channel.
 
 ## Concept
 
-Interview conversationnelle à 2 voix (Alex = host curieux, Marc = expert qui
-a étudié les 8 cours) sur les 8 cours des Mines 2019 de Jean-Marc Jancovici.
+Two-voice conversational interview (Alex = curious host, Marc = expert
+who studied the 8 lectures) on Jean-Marc Jancovici's 8 Mines lectures
+from 2019.
 
-**Différenciation** : pas un cours, pas un débat. Une vraie conversation entre
-deux personnes, où l'une découvre et l'autre maîtrise. Tension pédagogique
-naturelle.
+**Differentiation**: not a lecture, not a debate. A real conversation
+between two people, where one is discovering and the other has mastered
+the material. Natural pedagogical tension.
 
 ## Sources
 
-8 cours des Mines 2019 de Jancovici, analysés en depth=extreme via YT-Insight,
-juin 2026. Disponibles dans `knowledge_base/science/jancovici/`.
+8 Mines lectures 2019 by Jancovici, analyzed with depth=extreme via
+YT-Insight in June 2026. Available in
+`knowledge_base/science/jancovici/lectures/cours-mines-2019/`.
 
-## Statut
+## Status
 
-- [x] Concept défini
-- [x] Profile Jancovici créé (`_profile.md`)
-- [x] Script v1 écrit (`script.json`, 18 min, 2340 mots, 51 segments)
-- [x] Show notes créées (`show_notes.md`)
-- [ ] **Script v2** : étoffer pour atteindre 22-25 min (+700 mots)
-- [ ] **Production audio** : TTS Orpheus/Kokoro, 2 voix distinctes
-- [ ] **Mix audio** : ffmpeg, transitions musicales
-- [ ] **Vidéo YouTube** : image de fond + waveform + texte overlay
-- [ ] **Distribution** : upload YouTube + Spotify + Twitter clips
-- [ ] **Anglais** : traduction / version EN (post-pilote)
+- [x] Concept defined
+- [x] Jancovici profile created (`_profile.md`)
+- [x] Script v1 written (FR, 18 min)
+- [x] Script v2 written (FR, 24.3 min)
+- [x] **Script v3 written (EN, 19.5 min, 2874 words, 64 segments)** ← current
+- [x] **TTS voice test: Kokoro am_adam + am_michael** ← current
+- [x] **Audio production complete: 64 segments, master.wav 52 MB** ← current
+- [x] **Audio mix: final.wav + final.mp3** ← current
+- [x] **Video render: video.mp4 720p H.264 16 MB** ← current
+- [ ] **Review by user before publication**
+- [ ] Custom thumbnail (currently using solid color background)
+- [ ] Optional: re-record with section music stings
+- [ ] Optional: extend script to 22-25 min (currently 19.5)
+- [ ] YouTube upload + Spotify/Apple distribution
+- [ ] Twitter clips (60s) of best moments
 
-## Fichiers de cet épisode
+## Files in this episode
 
 ```
 EP001_jancovici-synthesis/
-├── README.md           ← ce fichier (statut)
-├── script.json         ← dialogue structuré pour production audio
-├── show_notes.md       ← titre YouTube, description, timestamps, tags
-├── audio_segments/     ← (à remplir) segments audio .wav par id
-└── debate_raw.json     ← (vide pour cet épisode, format débat = EP002+)
+├── README.md               ← this file (status)
+├── script.json             ← dialogue structure (64 segments)
+├── show_notes.md           ← YouTube title, description, chapters, tags
+├── master.wav              ← concatenated TTS audio (1147s = 19.1 min)
+├── final.wav               ← with intro/outro music (1172s = 19.5 min)
+├── final.mp3               ← MP3 export, 192 kbps (22 MB)
+├── video.mp4               ← YouTube-ready video (720p, 16 MB)
+├── audio_segments/         ← 64 individual .wav per segment
+└── debate_raw.json         ← empty (this is a synthesis, not a debate)
 ```
 
-## Décisions clés
+## Key decisions
 
-### Pourquoi 2 voix, pas un narrateur solo
-- Plus vivant, plus engageant
-- Tension pédagogique naturelle (curieux vs expert)
-- Pattern éprouvé : Lex Fridman, The Drive, Huberman
+### Why 2 voices, not a solo narrator
+- More alive, more engaging
+- Natural pedagogical tension (curious vs expert)
+- Proven pattern: Lex Fridman, The Drive, Huberman
 
-### Pourquoi en français d'abord
-- Source primaire en français (Jancovici)
-- Pilotage plus rapide (pas de traduction)
-- L'anglais viendra dans EP002+ ou v2 de cet épisode
+### Why English first, not French
+- 10x audience potential (anglophone climate-energy audience is huge)
+- Jancovici is well-known in English-language climate circles
+- The script can be translated later for FR releases
+- Pilot validation: easier to get feedback in English
 
-### Pourquoi Jancovici et pas un autre
-- Ses cours sont exceptionnels et structurés
-- Sujet énergie-climat = quête existentielle pour la décennie
-- 8 cours = matériel riche (16h de contenu) → synthèse en 25 min = forte valeur
-- Position pro-nucléaire clivante = bon pour engagement YouTube
+### Why Jancovici as first subject
+- His lectures are exceptional and structured
+- Energy-climate topic is an existential question for the decade
+- 8 lectures = rich material (16h of content) → 20 min synthesis = high value
+- Pro-nuclear position is polarizing = good for YouTube engagement
 
-### Pourquoi un pilot mono-sujet avant un débat
-- Tester le pipeline de bout en bout (TTS, mix, vidéo, distribution)
-- Valider la durée, le format, le ton
-- Le débat (Jancovici vs Lovins) sera EP002, plus complexe à produire
+### Why synthesis (not debate) as pilot
+- Test the production pipeline end-to-end (TTS, mix, video) first
+- Validate duration, format, tone with real audience
+- The debate (Jancovici vs Lovins) is EP002 — more complex to produce
 
-## Prochaines étapes concrètes
+### Why Kokoro TTS
+- Higher quality than Piper for English
+- 82M params, fast on CPU (no GPU needed)
+- 11 voices, including 4 male English
+- The voices `am_adam` (Alex) and `am_michael` (Marc) are distinct enough
 
-### Court terme (cette semaine)
+## Concrete next steps
 
-1. **Étoffer le script** (700 mots) :
-   - Transition climat→solutions (étoffer la respiration)
-   - Ajouter l'analogie des 4 estomacs des vaches (manquante dans v1)
-   - Renforcer l'analyse critique (sous-section monde non-OCDE)
-   - Outro un peu plus longue (rappel des chiffres clés)
-2. **Tester la production TTS** :
-   - 2 voix FR d'Orpheus ou Kokoro
-   - Générer 5-10 segments de test
-   - Valider la qualité avant de tout produire
+### Short-term (review)
 
-### Moyen terme (semaine prochaine)
+1. **Listen to the audio** (master.wav or final.wav)
+2. **Watch the video** (video.mp4)
+3. **Identify any issues** : mispronunciations, unnatural phrasing, awkward pauses
+4. **Decide**: publish as-is, or re-record specific segments
 
-3. **Production audio complète** (~50 min de calcul TTS)
-4. **Mix audio** (ffmpeg + transitions)
-5. **Vidéo YouTube** (image + waveform + overlays)
+### Medium-term (publish)
 
-### Avant publication
+5. **Custom thumbnail** : Jancovici photo + grid of 8 lectures + red banner
+6. **Better background** : real image instead of solid color (a Jancovici photo, or a thermodynamic diagram)
+7. **YouTube upload** : title, description, chapters, tags from show_notes.md
+8. **Spotify/Apple** : upload final.mp3
+9. **Twitter clips** : 60s cuts of best moments (3-4 clips)
 
-6. **Miniature** (Photoshop ou Canva)
-7. **Description YouTube** complète (dans `show_notes.md`)
-8. **Upload + premier post** sur chaîne MindClash
-9. **Mesures early** (rétention 30s, 50% mark, commentaires)
+### Long-term (improve)
 
-## Métriques de succès (pilote)
+10. **Extend script** to 22-25 min (add more back-and-forth, more nuance)
+11. **Add section music stings** : 2-3s ambient between major sections
+12. **Add text overlays** : key quotes shown on screen during delivery
+13. **Multi-language** : French version (re-translate script, swap to Piper+Tom/Siwis)
 
-- **Acoustique** : pas de coupures audio, mixage propre, transitions douces
-- **Rétention YouTube** : > 40% à 5 min, > 25% à 18 min (fin)
-- **Engagement** : > 50 likes, > 10 commentaires en 1 semaine
-- **Conversion** : > 100 abonnés générés si on hit 1000 vues
-- **Sentiment** : commentaires majoritairement positifs/curieux (pas de flame)
+## Success metrics (pilot)
 
-## Liens internes
+- **Audio quality** : no glitches, smooth mix, natural pauses
+- **YouTube retention** : > 40% at 5 min, > 25% at 18 min (end)
+- **Engagement** : > 50 likes, > 10 comments in week 1
+- **Conversion** : > 100 subscribers generated if we hit 1000 views
+- **Sentiment** : comments mostly positive/curious (no flames)
 
-- **Profile de la personnalité** : `knowledge_base/science/jancovici/_profile.md`
-- **Conférences sources** : `knowledge_base/science/jancovici/lectures/cours-mines-2019/`
-- **Prochain épisode (débat)** : `episodes/EP001_jancovici-vs-lovins/` (à renommer en EP002)
-- **README principal** : `../../README.md`
+## Internal links
 
-## Crédits
+- **Person profile** : `knowledge_base/science/jancovici/_profile.md`
+- **Source lectures** : `knowledge_base/science/jancovici/lectures/cours-mines-2019/`
+- **Next episode (debate)** : `episodes/EP001_jancovici-vs-lovins/` (to be renamed EP002)
+- **Main README** : `../../README.md`
 
-- **Script** : généré avec assistance IA (Hermes) à partir des MD Jancovici
-- **Voix** : Orpheus ou Kokoro TTS (à confirmer en phase test)
-- **Mix** : ffmpeg + Python audioop
-- **Vidéo** : moviepy ou ffmpeg drawtext
-- **Distribution** : YouTube Data API v3
+## Credits
 
-## Disclaimer légal
+- **Script**: AI-assisted (Hermes) generation from Jancovici MD analysis
+- **Voices**: Kokoro TTS v0.19 (am_adam + am_michael)
+- **Mix**: Python (numpy) + ffmpeg
+- **Video**: ffmpeg H.264 + AAC
+- **Distribution**: YouTube Data API v3 (planned)
 
-Ce podcast est généré avec assistance IA. Les citations sont attribuées à
-Jean-Marc Jancovici. Les thèses et opinions sont celles de Jancovici,
-présentées ici dans un format conversationnel à des fins pédagogiques.
+## Legal disclaimer
+
+This podcast is AI-assisted. All citations are attributed to Jean-Marc
+Jancovici. The theses and opinions are his, presented here in a
+conversational format for educational purposes.

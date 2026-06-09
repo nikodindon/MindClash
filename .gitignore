@@ -15,6 +15,10 @@ knowledge_base/**/*.wav
 episodes/**/audio_segments/
 episodes/**/final_audio.mp3
 episodes/**/final_video.mp4
+episodes/**/master.wav
+episodes/**/final.wav
+episodes/**/final.mp3
+episodes/**/video.mp4
 assets/voices/*.bin
 assets/voices/*.onnx
 

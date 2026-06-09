@@ -1,140 +1,129 @@
-# EP001 — La thermodynamique de la civilisation
+# EP001 — The Thermodynamics of Civilization
 
-> **Statut** : script terminé, en attente de production audio/vidéo
-> **Date prévue** : été 2026
-> **Durée cible** : 22-25 min (script actuel : 18 min — à étoffer en post-prod)
+> **Status**: pilot episode, audio + video produced, ready for review
+> **Planned release**: summer 2026
+> **Final duration**: 19.5 min (script target was 22-25; v2 could extend)
 
-## Titre YouTube (FR)
+## YouTube title (EN)
 
-**La thermodynamique de la civilisation : ce que les 8 cours des Mines de Jancovici nous apprennent vraiment**
-
-## Titre YouTube (EN, pour plus tard)
-
-*The Thermodynamics of Civilization: What Jancovici's Mines Lectures Actually Teach Us*
+**The Thermodynamics of Civilization: What Jancovici's Mines Lectures Actually Teach Us**
 
 ## Thumbnail (concept)
 
-- Visage de Jancovici en noir et blanc, regard caméra
-- Au-dessus : 8 icônes de cours (1-8) en grille
-- Bandeau rouge en bas : **"TOUT SON MESSAGE EN 25 MIN"**
-- Style : sobre, ingénieur, pas clickbait
+- Jancovici's face, black and white, direct gaze
+- 8 lecture icons (1-8) in a grid overlay
+- Red banner at bottom: **"ALL HIS MESSAGE IN 25 MIN"**
+- Style: clean, engineering-aesthetic, no clickbait
 
-## Description YouTube
+## YouTube description
 
-> Jean-Marc Jancovici est l'une des voix les plus écoutées (et les plus clivantes) du
-> débat énergie-climat en France. Ingénieur des Mines, président du Shift Project,
-> il donne depuis des années des cours dans son école d'origine qui sont devenus
-> une référence francophone incontournable.
+> Jean-Marc Jancovici is one of the most listened-to, and most polarizing,
+> voices in the French climate and energy debate. A mining engineer, the
+> head of the Shift Project, he has been teaching at the Paris School of
+> Mines for years. His lectures have become the reference for anyone in
+> France who wants to understand energy and climate from first principles.
 >
-> Mais qui a vraiment le temps de regarder 16 heures de cours ?
+> But who has time to watch sixteen hours of lectures?
 >
-> Dans ce premier épisode de MindClash, on a pris 8 de ses cours des Mines (2019)
-> — L'énergie, les fossiles, le climat, le nucléaire, les renouvelables, la
-> comptabilité carbone — et on en a extrait la substantifique moelle. Avec
-> Marc, qui les a vraiment étudiés, on parcourt les thèses centrales, les
-> chiffres qui font réfléchir, et les angles morts.
+> In this first episode of MindClash, we took 8 of his Mines lectures
+> (2019) — Energy, fossil fuels, climate, nuclear, renewables, carbon
+> accounting — and we extracted the core of his thinking. With Marc, who
+> really studied them, we walk through the central theses, the numbers
+> that make you think, and the blind spots.
 >
-> Au programme :
-> - Pourquoi l'énergie, c'est la base physique de toute civilisation
-> - Le pic pétrolier comme problème de géologie, pas d'opinion
-> - L'inertie climatique, et pourquoi on agit pour les générations futures
-> - Le nucléaire, la sobriété, les renouvelables : un mix, pas une baguette magique
-> - Une critique honnête : où Jancovici a raison, où il peut être contesté
+> In this episode:
+> - Why energy is the physical basis of every civilization
+> - Peak oil as a geology problem, not a question of opinion
+> - Climate inertia, and why we're acting for future generations
+> - Nuclear, sobriety, renewables: a mix, not a silver bullet
+> - An honest critique: where Jancovici is right, where he can be challenged
 >
-> 🎙️ Avec Alex (host) et Marc (expert)
-> 📚 Sources : 8 cours des Mines ParisTech 2019, Jancovici
-> ⚠️ Disclaimer : ce podcast est généré avec assistance IA. Le contenu s'appuie
-> sur les cours réels de Jancovici, avec citation et analyse humaine.
+> 🎙️ With Alex (host) and Marc (expert)
+> 📚 Sources: 8 Mines ParisTech lectures (2019) by Jancovici
+> ⚠️ Disclaimer: this podcast is AI-assisted. The content is based on
+> Jancovici's real lectures, with human-curated citation and analysis.
 >
-> 🔗 Tous les liens vers les cours en description
-> 📩 Contact : [à compléter]
+> 🔗 Links to all 8 lectures in the description
 
-## Chapitres YouTube (timestamps)
+## YouTube chapters (timestamps)
 
 ```
-0:00 Intro — Bienvenue dans MindClash
-1:40 L'énergie — Le cadre thermodynamique
-5:20 Le climat — Inertie et auto-accélération
-9:06 Les solutions — Nucléaire, sobriété, renouvelables
-13:24 Analyse critique — Forces et angles morts
-17:53 Outro — Teaser prochain épisode (Jancovici vs Lovins)
+0:00 Intro — Welcome to MindClash
+1:34 Energy — The thermodynamic framework
+5:36 Climate — Inertia and self-acceleration
+9:32 Solutions — Nuclear, sobriety, renewables
+13:53 Critical analysis — Strengths and blind spots
+18:25 Outro — Teaser for next episode (Jancovici vs Lovins)
 ```
 
-## Tags YouTube (FR + EN, 20 tags)
+## Tags (EN, 20 tags)
 
 ```
-jancovici, jean-marc jancovici, cours des mines, shift project,
-énergie, pic pétrolier, changement climatique, nucléaire, sobriété,
-énergies renouvelables, thermodynamique, transition énergétique,
-réchauffement climatique, bilan carbone, décarbonation,
-mindclash, podcast ia, podcast énergie, podcast climat,
-jancovici nuclear, decarbonation france
+jancovici, jean-marc jancovici, mines paris, shift project, energy,
+peak oil, climate change, nuclear, sobriety, renewable energy,
+thermodynamics, energy transition, global warming, carbon footprint,
+decarbonization, mindclash, ai podcast, energy podcast, climate podcast,
+sustainability
 ```
 
-## Sources (à mettre en description YouTube)
+## Sources (in YouTube description)
 
-1. **Cours 1 — L'énergie** : https://www.youtube.com/watch?v=xgy0rW0oaFI
-2. **Cours 2 — Les énergies fossiles** : https://www.youtube.com/watch?v=1NHPgrH5lcQ
-3. **Cours 3 — Le changement climatique (1)** : https://www.youtube.com/watch?v=l8pdSClyRds
-4. **Cours 4 — Le changement climatique (2)** : https://www.youtube.com/watch?v=JKoRsO5fkAQ
-5. **Cours 5 — Les économies d'énergie** : https://www.youtube.com/watch?v=PEY6LmscKc4
-6. **Cours 6 — Le nucléaire** : https://www.youtube.com/watch?v=t0Xp6CCte0U
-7. **Cours 7 — Les énergies renouvelables** : https://www.youtube.com/watch?v=PEY6LmscKc4
-8. **Cours 8 — La comptabilité carbone** : https://www.youtube.com/watch?v=lgoUns8Cu0w
+1. **Lecture 1 — Energy** : https://www.youtube.com/watch?v=xgy0rW0oaFI
+2. **Lecture 2 — Fossil fuels** : https://www.youtube.com/watch?v=1NHPgrH5lcQ
+3. **Lecture 3 — Climate change (1)** : https://www.youtube.com/watch?v=l8pdSClyRds
+4. **Lecture 4 — Climate change (2)** : https://www.youtube.com/watch?v=JKoRsO5fkAQ
+5. **Lecture 5 — Energy savings** : https://www.youtube.com/watch?v=PEY6LmscKc4
+6. **Lecture 6 — Nuclear** : https://www.youtube.com/watch?v=t0Xp6CCte0U
+7. **Lecture 7 — Renewables** : https://www.youtube.com/watch?v=PEY6LmscKc4
+8. **Lecture 8 — Carbon accounting** : https://www.youtube.com/watch?v=lgoUns8Cu0w
 
-## Citations intégrées (à vérifier en post-prod)
+## Embedded citations (verified in production)
 
 | Timestamp | Citation | Source |
 |-----------|----------|--------|
-| 1:55:00 | "C'est le charme du monde fini…" | Cours 1 |
-| 19:10 | "Le pétrole est par essence l'énergie de la mondialisation" | Cours 1 |
-| 14:10 | "98% du transport planétaire est fait avec du pétrole" | Cours 2 |
-| 1:11:40 | "Les vaches sont supérieures à vous et à moi" | Cours 3 |
-| 1:01:20 | "L'été 2003… l'été normal" | Cours 4 |
-| 1:34:10 | "Auto-accélération de la calotte" | Cours 4 |
-| 6:00 | "Une centrale nucléaire, c'est une bouilloire compliquée" | Cours 6 |
-| 35:00 | "Les déchets nucléaires… zéro mort" | Cours 6 |
-| 39:10 | "La nuit, par définition, c'est quand il n'y a pas de soleil" | Cours 7 |
-| 1:15:00 | "La puissance d'une éolienne varie comme le cube" | Cours 7 |
-| 44:10 | "Une démocratie, c'est un système remontant" | Cours 5 |
+| 1:55:00 | "This is the charm of a finite world…" | Lecture 1 |
+| 19:10 | "Oil is, by essence, the energy of globalization" | Lecture 1 |
+| 14:10 | "98% of global transport runs on oil" | Lecture 2 |
+| 1:11:40 | "Cows are superior to you and me" | Lecture 3 |
+| 1:01:20 | "Summer 2003… the normal summer" | Lecture 4 |
+| 1:34:10 | "Self-acceleration of the ice sheet" | Lecture 4 |
+| 6:00 | "A nuclear power plant is a fancy kettle" | Lecture 6 |
+| 35:00 | "Nuclear waste has killed zero people" | Lecture 6 |
+| 39:10 | "At night, by definition, no sun" | Lecture 7 |
+| 1:15:00 | "Wind turbine power varies with the cube" | Lecture 7 |
+| 44:10 | "A democracy is a bottom-up system" | Lecture 5 |
 
-## Notes de production
+## Production notes
 
-### À étoffer (v2 du script)
+### Audio
 
-- Ajouter ~700 mots pour atteindre 22-25 min
-- Cibles : transition climat→solutions, transition analyse→outro
-- Possible : ajouter une section "le mot de la fin" avec 3 punchlines fortes
+- Engine: **Kokoro TTS** (v0.19 ONNX, 24000 Hz, 16-bit)
+- Voices: Alex = `am_adam`, Marc = `am_michael` (US English, both male)
+- Pipeline: 64 segments → 64 wav files → `master.wav` (1147s) → `final.wav` (with intro/outro, 1172s) → `final.mp3` (192 kbps)
+- Total file sizes: master.wav 52 MB, final.wav 54 MB, final.mp3 22 MB
 
-### Production audio (TTS)
+### Video
 
-- TTS moteur recommandé : **Orpheus** (qualité) ou **Kokoro** (rapide) en français
-- 2 voix distinctes :
-  - **Alex** (host) : voix masculine, posée, curieuse, ton podcast
-  - **Marc** (expert) : voix masculine, plus grave, posée, pédagogue
-- Pause par défaut entre segments : 600-800ms (déjà inclus dans le JSON)
-- Transitions musicales : 2-3s de sting ambient entre sections
-
-### Production vidéo (optionnel mais recommandé pour YouTube)
-
-- Image de fond fixe (visage Jancovici, ou schéma thermodynamique)
-- Overlay du texte en cours (mot-clé en surbrillance à chaque punchline)
-- Waveform discrète des voix en bas
-- Logo MindClash en haut à droite, discret
+- Codec: H.264 video + AAC audio
+- Resolution: 1280x720 (720p)
+- Duration: 19.5 min
+- Background: solid dark color (no image yet)
+- For v2: a more interesting background (e.g. Jancovici photo with slow zoom, or a thermodynamic diagram)
 
 ### Distribution
 
-- **YouTube** : format long (vidéo + audio)
-- **Spotify / Apple Podcasts** : version audio seule
-- **Twitter/X** : clips de 60s des meilleurs moments (3-4 clips)
-  - Cible : "le nucléaire fait zéro mort", "98% du transport = pétrole", "2003 = futur été normal"
+- **YouTube** : main platform, video upload
+- **Spotify / Apple Podcasts** : audio only (use final.mp3)
+- **Twitter/X clips** : 60s clips of best moments (3-4 clips)
+  - Targets: "nuclear killed zero people", "98% transport = oil", "2003 = future normal summer"
 
-## Métadonnées techniques
+## Metadata
 
-- **Format** : interview conversationnelle 2 voix
-- **Langue** : français (versions EN à venir)
-- **Durée cible** : 22-25 min
-- **FPS** : 30 (vidéo)
-- **Audio** : 48kHz / 24-bit
-- **Codec vidéo** : H.264
-- **Bitrate audio** : 192 kbps minimum
+- **Format**: 2-voice conversational interview
+- **Language**: English
+- **Duration**: 19.5 min (target 22-25)
+- **FPS**: 30
+- **Audio**: 24 kHz / 16-bit
+- **Video codec**: H.264
+- **Audio bitrate**: 192 kbps
+- **File**: `video.mp4` (16.3 MB)
