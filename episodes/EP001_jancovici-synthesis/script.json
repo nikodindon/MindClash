@@ -126,6 +126,38 @@
       "pause_after_ms": 900
     },
     {
+      "id": 12.5,
+      "section": "energie",
+      "speaker": "host",
+      "text": "Attends, sur la dépendance au pétrole pour le transport, tu disais quatre-vingt-dix-huit pour cent tout à l'heure. C'est vraiment quatre-vingt-dix-huit ? Pas quatre-vingts, pas quatre-vingt-douze ?",
+      "emotion": "incredulous",
+      "pause_after_ms": 600
+    },
+    {
+      "id": 12.6,
+      "section": "energie",
+      "speaker": "expert",
+      "text": "Quatre-vingt-dix-huit pour cent. Et ce chiffre-là, Jancovici le martèle dans le cours 2. Il dit que le pétrole a une densité énergétique volumique tellement supérieure aux autres formes d'énergie qu'il est imbattable pour le transport. Pour faire voler un avion, pour faire rouler un cargo sur les océans, vous n'avez tout simplement pas d'alternative aujourd'hui à l'échelle industrielle. Le kérosène, c'est du pétrole raffiné. Le gasoil des bateaux, c'est du pétrole. Quand vous voyez un porte-conteneurs en haute mer, vous voyez du pétrole à l'œuvre, rien d'autre. Et c'est pour ça que la sortie du pétrole est un problème logistique énorme, pas juste un problème de volonté.",
+      "emotion": "informing",
+      "pause_after_ms": 1200
+    },
+    {
+      "id": 12.7,
+      "section": "energie",
+      "speaker": "host",
+      "text": "Et ça, c'est un point sur lequel les critiques de Jancovici disent qu'il sous-estime la vitesse d'innovation. Les batteries progressent, l'hydrogène arrive, etc.",
+      "emotion": "skeptical",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 12.8,
+      "section": "energie",
+      "speaker": "expert",
+      "text": "C'est une critique légitime. Et j'y reviendrai dans la section analyse. Mais pour l'instant, ce qu'il faut retenir, c'est que pour Jancovici, ce n'est pas qu'on ne peut pas inventer, c'est qu'on ne peut pas le faire assez vite à l'échelle planétaire pour remplacer tout le système existant. Et chaque année où on ne le fait pas, on creuse la dette physique. C'est ça, sa grille de lecture.",
+      "emotion": "balanced",
+      "pause_after_ms": 1000
+    },
+    {
       "id": 13,
       "section": "energie",
       "speaker": "expert",
@@ -180,6 +212,30 @@
       "text": "Et il y a un point qu'il martèle, j'imagine, sur l'inertie du système climatique ?",
       "emotion": "curious",
       "pause_after_ms": 500
+    },
+    {
+      "id": 19.5,
+      "section": "climat",
+      "speaker": "host",
+      "text": "Sur les émissions de méthane, j'ai vu une citation dans le cours 3 qui m'a fait sourire. Tu peux nous la sortir ?",
+      "emotion": "amused",
+      "pause_after_ms": 400
+    },
+    {
+      "id": 19.6,
+      "section": "climat",
+      "speaker": "expert",
+      "text": "Ah oui, c'est la phrase qu'il sort quand il parle de l'élevage. Il dit : les vaches sont supérieures à vous et à moi. Elles ont quatre estomacs au lieu d'en avoir un. Et la raison pour laquelle c'est drôle, c'est qu'il l'utilise pour expliquer un truc sérieux. Les ruminants, à cause de leur digestion spécifique, produisent du méthane, qui est un gaz à effet de serre bien plus puissant que le CO2 à court terme. Donc quand on parle des émissions, on ne parle pas que des voitures et des centrales. On parle aussi de ce qu'on mange. Et là, Jancovici fait quelque chose d'intéressant, il ne moralise pas. Il pose juste le chiffre, et il laisse chacun faire son calcul.",
+      "emotion": "amused-then-serious",
+      "pause_after_ms": 1200
+    },
+    {
+      "id": 19.7,
+      "section": "climat",
+      "speaker": "host",
+      "text": "C'est typique de sa pédagogie, ça. Pas de moralisation, juste de la physique. Et c'est pour ça qu'il dérange, je pense. Parce que quand on a les chiffres, on ne peut plus vraiment faire semblant de ne pas savoir.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 700
     },
     {
       "id": 20,
@@ -254,12 +310,36 @@
       "pause_after_ms": 1100
     },
     {
-      "id": 29,
+      "id": 28.5,
+      "section": "solutions",
+      "speaker": "host",
+      "text": "Et sur la densité énergétique, c'est un argument massue, non ?",
+      "emotion": "curious",
+      "pause_after_ms": 400
+    },
+    {
+      "id": 28.6,
       "section": "solutions",
       "speaker": "expert",
-      "text": "Et il y a un chiffre qui m'a scotché. L'énergie nucléaire a une densité énergétique environ un million de fois supérieure à celle des énergies chimiques. C'est-à-dire qu'un gramme d'uranium produit autant d'énergie qu'un million de grammes de pétrole. C'est pour ça qu'on a fait des bombes avec, et c'est pour ça que la filière est si compacte : une centrale nucléaire française, c'est quelques hectares, contre des millions d'hectares pour des champs d'éoliennes à production équivalente.",
+      "text": "Ah, c'est probablement le chiffre le plus contre-intuitif de tout le cours. L'énergie nucléaire a une densité énergétique environ un million de fois supérieure à celle des énergies chimiques. Ça veut dire qu'un gramme d'uranium produit autant d'énergie qu'un million de grammes, soit une tonne, de pétrole. C'est vertigineux. Et c'est pour ça qu'on a pu faire des bombes avec. Et c'est aussi pour ça que les centrales nucléaires sont si compactes : quelques hectares contre des dizaines de milliers d'hectares pour des champs d'éoliennes ou de panneaux solaires à production équivalente. C'est un argument de surface, et en France où le foncier est un sujet, ça compte.",
       "emotion": "passionate",
-      "pause_after_ms": 1100
+      "pause_after_ms": 1300
+    },
+    {
+      "id": 28.7,
+      "section": "solutions",
+      "speaker": "host",
+      "text": "Et la France justement, c'est un cas particulier. On est un des pays les plus nucléarisés au monde. Comment Jancovici voit ça ?",
+      "emotion": "engaged",
+      "pause_after_ms": 400
+    },
+    {
+      "id": 28.8,
+      "section": "solutions",
+      "speaker": "expert",
+      "text": "Pour lui, c'est un avantage historique formidable, pas un problème. Beaucoup de ses collègues allemands ou italiens considèrent que le nucléaire est trop cher, trop risqué, trop centralisé. Jancovici retourne ces arguments. Trop cher ? Regardez le coût complet, avec les externalités. Trop risqué ? Comparez aux morts du charbon. Trop centralisé ? Justement, ça permet de produire massivement sur quelques sites. C'est cohérent avec la géographie du réseau électrique français. Et il rappelle, et c'est un point qu'on oublie, que la France n'a pas attendu les années 2000 pour se poser la question du CO2. Elle a massivement investi dans le nucléaire dans les années soixante-dix, à un moment où la question climatique n'était pas encore mainstream. C'est de l'avance stratégique qui paye aujourd'hui.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 1300
     },
     {
       "id": 30,
@@ -268,6 +348,30 @@
       "text": "Et sur les déchets nucléaires, j'imagine qu'il a une position assez forte aussi ?",
       "emotion": "curious",
       "pause_after_ms": 400
+    },
+    {
+      "id": 30.5,
+      "section": "solutions",
+      "speaker": "expert",
+      "text": "Et avant de parler des déchets, je voudrais ajouter un truc sur le rendement, parce que c'est un chiffre qui surprend. Le rendement typique de la filière nucléaire, c'est de l'ordre de un pour cent, voire moins. C'est-à-dire qu'on n'exploite qu'environ un pour cent de l'énergie intrinsèque contenue dans l'uranium naturel. Le reste est perdu. Ce qui veut dire qu'on a une marge de progression énorme avec les réacteurs de quatrième génération, où on parle de taux de combustion beaucoup plus élevés. Et là, Jancovici est optimiste. La France a les compétences pour y arriver, il faut juste la volonté politique. Ce qu'il manque, ce n'est pas la technologie, c'est la décision.",
+      "emotion": "informative",
+      "pause_after_ms": 1200
+    },
+    {
+      "id": 30.6,
+      "section": "solutions",
+      "speaker": "host",
+      "text": "Et c'est justement là-dessus que ses détracteurs disent qu'il est trop techno-béat. Qu'il sous-estime les délais, les coûts cachés, les problèmes de gouvernance.",
+      "emotion": "skeptical",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 30.7,
+      "section": "solutions",
+      "speaker": "expert",
+      "text": "C'est une critique qu'on peut entendre, oui. Et c'est pour ça qu'il faut toujours replacer ses arguments dans leur contexte. Il parle à des élèves ingénieurs des Mines, qui sont des gens qui vont effectivement travailler dans ces secteurs. Son optimisme technologique est ciblé, pas général. Il ne dit pas que la technologie résoudra tout, il dit que pour certains problèmes spécifiques, on a les solutions techniques, et qu'il est criminel de ne pas les utiliser. C'est plus modeste que ce que certains commentateurs en font.",
+      "emotion": "balanced",
+      "pause_after_ms": 1100
     },
     {
       "id": 31,
