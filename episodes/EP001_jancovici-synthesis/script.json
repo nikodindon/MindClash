@@ -1,0 +1,448 @@
+{
+  "episode": "EP001",
+  "title": "La thermodynamique de la civilisation : ce que les 8 cours des Mines de Jancovici nous apprennent vraiment",
+  "title_en": "The Thermodynamics of Civilization: What Jancovici's Mines Lectures Actually Teach Us",
+  "duration_target_seconds": 1450,
+  "language": "fr",
+  "format": "interview",
+  "speakers": {
+    "host": {
+      "name": "Alex",
+      "voice_id": "fr_FR-male-1",
+      "style": "curious, naive, asks the questions the audience would ask"
+    },
+    "expert": {
+      "name": "Marc",
+      "voice_id": "fr_FR-male-2",
+      "style": "expert who studied the 8 lectures, humble, cites with precision, admits limits"
+    }
+  },
+  "sources": [
+    "knowledge_base/science/jancovici/_profile.md",
+    "knowledge_base/science/jancovici/lectures/cours-mines-2019/cours-1-*.md",
+    "knowledge_base/science/jancovici/lectures/cours-mines-2019/cours-2-*.md",
+    "knowledge_base/science/jancovici/lectures/cours-mines-2019/cours-3-*.md",
+    "knowledge_base/science/jancovici/lectures/cours-mines-2019/cours-4-*.md",
+    "knowledge_base/science/jancovici/lectures/cours-mines-2019/cours-5-*.md",
+    "knowledge_base/science/jancovici/lectures/cours-mines-2019/cours-6-*.md",
+    "knowledge_base/science/jancovici/lectures/cours-mines-2019/cours-7-*.md",
+    "knowledge_base/science/jancovici/lectures/cours-mines-2019/cours-8-*.md"
+  ],
+  "segments": [
+    {
+      "id": 1,
+      "section": "intro",
+      "speaker": "host",
+      "text": "Salut à toutes et à tous, bienvenue dans ce premier épisode de MindClash. Moi c'est Alex, et aujourd'hui on va parler d'un personnage qui fait beaucoup parler dans le débat climat-énergie en France : Jean-Marc Jancovici.",
+      "emotion": "friendly",
+      "pause_after_ms": 600
+    },
+    {
+      "id": 2,
+      "section": "intro",
+      "speaker": "host",
+      "text": "Ingénieur des Mines, président du Shift Project, il donne depuis des années des cours aux Mines ParisTech qui sont devenus une sorte de référence francophone sur l'énergie et le climat. J'ai devant moi quelqu'un qui a vraiment potassé ces cours, et qui va nous aider à y voir clair.",
+      "emotion": "engaged",
+      "pause_after_ms": 800
+    },
+    {
+      "id": 3,
+      "section": "intro",
+      "speaker": "host",
+      "text": "Marc, bienvenue. Avant qu'on plonge, peux-tu nous dire ce qui t'a frappé quand tu as commencé à étudier ces cours ?",
+      "emotion": "curious",
+      "pause_after_ms": 400
+    },
+    {
+      "id": 4,
+      "section": "intro",
+      "speaker": "expert",
+      "text": "Salut Alex. Ce qui m'a frappé d'entrée, c'est que Jancovici ne parle jamais d'énergie de manière isolée. Pour lui, l'énergie c'est le substrat physique de toute civilisation. Quand il dit civilisation, il entend littéralement : la capacité d'une société à transformer son environnement pour subvenir à ses besoins.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 700
+    },
+    {
+      "id": 5,
+      "section": "intro",
+      "speaker": "expert",
+      "text": "Et c'est ça qui rend ses cours différents d'un cours d'économie ou de physique classique. Il fait le pont entre la thermodynamique, l'économie, la géopolitique, et le quotidien. Et le tout avec un parti pris : ne jamais sortir du cadre physique. Quand on raisonne sur l'énergie, on raisonne en flux de matière, pas en euros.",
+      "emotion": "passionate",
+      "pause_after_ms": 900
+    },
+    {
+      "id": 6,
+      "section": "energie",
+      "speaker": "host",
+      "text": "Ok, donc thermodynamique de la civilisation. Concrètement, on parle de quoi ?",
+      "emotion": "curious",
+      "pause_after_ms": 400
+    },
+    {
+      "id": 7,
+      "section": "energie",
+      "speaker": "expert",
+      "text": "Le premier cours, c'est L'énergie. Et là Jancovici pose une statistique qui doit nous arrêter. Aujourd'hui, l'énergie finale consommée en France, et plus largement dans l'OCDE, est encore majoritairement fossile. Pétrole, gaz, charbon. Le nucléaire et les renouvelables, dont on parle beaucoup, sont en réalité secondaires dans le mix final.",
+      "emotion": "informing",
+      "pause_after_ms": 800
+    },
+    {
+      "id": 8,
+      "section": "energie",
+      "speaker": "expert",
+      "text": "Et il y a une phrase dans le premier cours qui m'a marqué, à la fin, presque comme une maxime. Il dit : c'est le charme du monde fini. Il ne peut pas avoir un définiment de plus en plus. C'est-à-dire : nous vivons sur une planète finie, et l'idée qu'on peut croître infiniment sur un support fini, c'est physiquement impossible.",
+      "emotion": "serious",
+      "pause_after_ms": 1000
+    },
+    {
+      "id": 9,
+      "section": "energie",
+      "speaker": "host",
+      "text": "Donc pour lui, dès le premier cours, il plante le décor. La croissance matérielle sans fin, c'est un mythe physique.",
+      "emotion": "engaged",
+      "pause_after_ms": 400
+    },
+    {
+      "id": 10,
+      "section": "energie",
+      "speaker": "expert",
+      "text": "Exactement. Et le deuxième cours, Les énergies fossiles, il creuse ça avec les chiffres du pétrole. Et là, une autre statistique qui tue : quatre-vingt-dix-huit pour cent du transport planétaire est fait avec du pétrole. Pas quatre-vingts. Quatre-vingt-dix-huit. Quand on parle de mondialisation, on parle concrètement de l'âge du pétrole. Il dit lui-même que le pétrole est par essence l'énergie de la mondialisation. Il n'y a pas de mondialisation sans pétrole.",
+      "emotion": "informing",
+      "pause_after_ms": 900
+    },
+    {
+      "id": 11,
+      "section": "energie",
+      "speaker": "host",
+      "text": "Et le pic pétrolier, il en parle comment ? Parce que c'est un concept qu'on entend beaucoup, mais souvent de manière floue.",
+      "emotion": "curious",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 12,
+      "section": "energie",
+      "speaker": "expert",
+      "text": "Jancovici en fait un problème de géophysique, pas d'opinion. La question c'est : à quel moment la production mondiale de pétrole conventionnel va plafonner, puis décliner, parce qu'on a trouvé les gisements les plus faciles et que les nouveaux sont plus chers à extraire ? Et il rappelle que l'OPEP n'est pas un acteur neutre : c'est un cartel. Donc on ne peut pas compter sur le marché pour s'autoréguler.",
+      "emotion": "serious",
+      "pause_after_ms": 900
+    },
+    {
+      "id": 13,
+      "section": "energie",
+      "speaker": "expert",
+      "text": "Et surtout, il insiste sur un point que la plupart des commentateurs occultent : en Europe, l'approvisionnement en énergies fossiles est déjà en déclin structurel. Pas à cause du climat, pas à cause des politiques. À cause de la géologie. Les gisements du champ pétrolifère de la mer du Nord, par exemple, sont en train de s'épuiser. On a passé le pic pour la production conventionnelle européenne, et on ne le dit pas assez.",
+      "emotion": "passionate",
+      "pause_after_ms": 1000
+    },
+    {
+      "id": 14,
+      "section": "energie",
+      "speaker": "host",
+      "text": "C'est un point que personnellement je n'avais jamais entendu formulé aussi clairement. Le fait que la fin du pétrole ne soit pas qu'une question de volonté politique mais aussi, déjà, une réalité physique en Europe.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 600
+    },
+    {
+      "id": 15,
+      "section": "energie",
+      "speaker": "expert",
+      "text": "Et c'est ça qui rend Jancovici précieux. Il déplace le débat. Au lieu de se demander est-ce qu'on veut sortir du pétrole, il pose la question : est-ce qu'on pourra continuer à en avoir ? Et ces deux questions ne mènent pas du tout aux mêmes politiques.",
+      "emotion": "insightful",
+      "pause_after_ms": 900
+    },
+    {
+      "id": 16,
+      "section": "climat",
+      "speaker": "host",
+      "text": "Ok, donc on a le cadre physique. Passons au climat. Le cours 3, c'est quoi exactement ?",
+      "emotion": "engaged",
+      "pause_after_ms": 400
+    },
+    {
+      "id": 17,
+      "section": "climat",
+      "speaker": "expert",
+      "text": "Le cours 3, c'est Le changement climatique, première partie. Et là Jancovici commence par un rappel que tout le monde connaît, mais qu'il traite avec une rigueur qu'on voit rarement. L'Accord de Paris en 2015, c'est un accord politique. Mais le problème physique, c'est la concentration de CO2 dans l'atmosphère. Et malgré des décennies de négociations internationales, cette concentration continue d'augmenter.",
+      "emotion": "informing",
+      "pause_after_ms": 900
+    },
+    {
+      "id": 18,
+      "section": "climat",
+      "speaker": "expert",
+      "text": "Il fait aussi une distinction pédagogique très utile. Le climat, c'est une moyenne statistique sur le temps et l'espace. La météo, c'est ce qui se passe chez vous, chez moi, demain matin. Et les variations saisonnières, ce n'est pas du climat. Donc quand un commentateur confond les deux, c'est soit de l'incompétence, soit une manipulation. Il est cash là-dessus.",
+      "emotion": "serious",
+      "pause_after_ms": 900
+    },
+    {
+      "id": 19,
+      "section": "climat",
+      "speaker": "host",
+      "text": "Et il y a un point qu'il martèle, j'imagine, sur l'inertie du système climatique ?",
+      "emotion": "curious",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 20,
+      "section": "climat",
+      "speaker": "expert",
+      "text": "Oui, et c'est probablement le point le plus important pour comprendre pourquoi on est dans une situation difficile. Une fois que le CO2 se retrouve dans l'atmosphère, son temps d'amortissement, c'est-à-dire le temps qu'il met à être retiré naturellement, est extrêmement élevé. On parle de siècles, voire de millénaires. Donc même si on arrêtait toutes les émissions demain matin, les effets continueraient à se manifester pendant très longtemps.",
+      "emotion": "serious",
+      "pause_after_ms": 1000
+    },
+    {
+      "id": 21,
+      "section": "climat",
+      "speaker": "host",
+      "text": "Donc on a déjà enclenché un processus dont on ne verra pas la fin de notre vivant. C'est vertigineux.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 22,
+      "section": "climat",
+      "speaker": "expert",
+      "text": "Exactement. Et c'est aussi pour ça qu'il insiste sur le fait qu'il faut agir maintenant, pas dans vingt ans. Chaque tonne de CO2 émise aujourd'hui est une tonne qui restera dans le système climatique pour très longtemps. Et le cours 4, qui parle des conséquences, le confirme. Il cite notamment l'exemple de l'été 2003, la fameuse canicule en Europe. Il dit : dans quelques décennies, ce qui était exceptionnel en 2003 deviendra l'été normal. Cinquante pour cent des étés seront plus chauds que celui-là.",
+      "emotion": "passionate",
+      "pause_after_ms": 1100
+    },
+    {
+      "id": 23,
+      "section": "climat",
+      "speaker": "host",
+      "text": "Et l'inquiétude sur la fonte des calottes, il l'aborde ?",
+      "emotion": "curious",
+      "pause_after_ms": 400
+    },
+    {
+      "id": 24,
+      "section": "climat",
+      "speaker": "expert",
+      "text": "Oui, et il y a un mot qu'il utilise qui m'a marqué. Il parle d'auto-accélération. Une fois que la calotte a commencé à fondre, le processus s'auto-accélère. Pourquoi ? Parce que la glace blanche renvoie le rayonnement solaire. Quand elle disparaît, l'océan ou la terre sombre absorbe plus de chaleur, ce qui accélère la fonte autour. C'est une boucle de rétroaction positive. Et c'est typiquement le genre de dynamique où, quand on la déclenche, on ne peut plus vraiment l'arrêter.",
+      "emotion": "serious",
+      "pause_after_ms": 1100
+    },
+    {
+      "id": 25,
+      "section": "climat",
+      "speaker": "host",
+      "text": "Donc pour résumer, ce qu'on retient du bloc climat, c'est : c'est déjà enclenché, l'inertie est longue, et certaines dynamiques sont auto-accélératrices. C'est pas le tableau le plus optimiste.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 600
+    },
+    {
+      "id": 26,
+      "section": "climat",
+      "speaker": "expert",
+      "text": "Non, clairement pas. Et Jancovici assume ce pessimisme. Mais il ne s'arrête pas là, heureusement. Sinon, ce serait juste déprimant. Et c'est là qu'il entre dans le bloc solutions.",
+      "emotion": "balanced",
+      "pause_after_ms": 700
+    },
+    {
+      "id": 27,
+      "section": "solutions",
+      "speaker": "host",
+      "text": "Justement, quelles solutions il propose ? Et est-ce qu'il est pro-nucléaire comme on le dit souvent ?",
+      "emotion": "engaged",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 28,
+      "section": "solutions",
+      "speaker": "expert",
+      "text": "Oui, il est clairement pro-nucléaire, mais pas pour des raisons idéologiques, pour des raisons thermodynamiques. Le cours 6 est entièrement dédié à ça. Et la première chose qu'il fait, c'est démystifier. Il dit : une centrale nucléaire, c'est fondamentalement une bouilloire compliquée. L'idée, c'est de chauffer de l'eau avec la chaleur produite par la fission, et de faire tourner une turbine. C'est de la physique du dix-neuvième siècle, finalement.",
+      "emotion": "amused",
+      "pause_after_ms": 1100
+    },
+    {
+      "id": 29,
+      "section": "solutions",
+      "speaker": "expert",
+      "text": "Et il y a un chiffre qui m'a scotché. L'énergie nucléaire a une densité énergétique environ un million de fois supérieure à celle des énergies chimiques. C'est-à-dire qu'un gramme d'uranium produit autant d'énergie qu'un million de grammes de pétrole. C'est pour ça qu'on a fait des bombes avec, et c'est pour ça que la filière est si compacte : une centrale nucléaire française, c'est quelques hectares, contre des millions d'hectares pour des champs d'éoliennes à production équivalente.",
+      "emotion": "passionate",
+      "pause_after_ms": 1100
+    },
+    {
+      "id": 30,
+      "section": "solutions",
+      "speaker": "host",
+      "text": "Et sur les déchets nucléaires, j'imagine qu'il a une position assez forte aussi ?",
+      "emotion": "curious",
+      "pause_after_ms": 400
+    },
+    {
+      "id": 31,
+      "section": "solutions",
+      "speaker": "expert",
+      "text": "Ah oui, et c'est une citation qui revient beaucoup. Il dit : les déchets nucléaires à ce jour ont fait zéro mort. Absolument personne n'est mort. C'est à comparer avec d'autres industries énergétiques. L'extraction de charbon, par exemple, fait des centaines de milliers de morts par accidents, maladies respiratoires, etc. Les barrages hydroélectriques, c'est des catastrophes ponctuelles. Le solaire, c'est moins mortel, mais ça demande des matériaux rares avec des conditions d'extraction discutables. Donc oui, le nucléaire a un problème de gestion long terme, mais comparé aux alternatives réelles, c'est un des choix les moins létaux qu'on ait.",
+      "emotion": "matter-of-fact",
+      "pause_after_ms": 1200
+    },
+    {
+      "id": 32,
+      "section": "solutions",
+      "speaker": "host",
+      "text": "Et les renouvelables, il en pense quoi ? Parce que souvent on oppose les deux, comme si c'était l'un ou l'autre.",
+      "emotion": "engaged",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 33,
+      "section": "solutions",
+      "speaker": "expert",
+      "text": "Justement, le cours 7, qui est entièrement sur les renouvelables, est très intéressant parce qu'il est à la fois technique et critique. Il y a cette phrase qui m'a fait sourire : la nuit, par définition, c'est quand il n'y a pas de soleil. Il dit ça pour souligner l'évidence physique qu'on oublie trop souvent : les renouvelables sont intermittents par nature. Le solaire, c'est la journée. L'éolien, c'est quand le vent souffle. Et la puissance d'une éolienne varie comme le cube de la vitesse du vent, ce qui rend sa production très irrégulière.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 1100
+    },
+    {
+      "id": 34,
+      "section": "solutions",
+      "speaker": "expert",
+      "text": "Mais ce qui est important, c'est qu'il ne diabolise pas les renouvelables. Il dit que c'est une brique, pas la solution miracle. Le mix idéal selon lui, c'est : nucléaire pour le socle, renouvelables pour compléter, sobriété pour réduire la demande, et efficacité pour utiliser mieux l'énergie. Les quatre ensemble. Pas un seul de ces quatre éléments ne suffit à lui seul.",
+      "emotion": "balanced",
+      "pause_after_ms": 1100
+    },
+    {
+      "id": 35,
+      "section": "solutions",
+      "speaker": "host",
+      "text": "Et la sobriété, comment il la définit exactement ? Parce que c'est un mot qui fait peur, on entend souvent que c'est un retour à la lampe à huile.",
+      "emotion": "curious",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 36,
+      "section": "solutions",
+      "speaker": "expert",
+      "text": "Sa définition est intéressante. Il dit : la sobriété, en gros, c'est je m'auto-inflige une limitation de ce que je consomme. Ce n'est pas une punition. C'est un choix collectif de mieux avec moins. Et c'est politiquement, sans doute, le pilier le plus difficile à mettre en place, parce qu'il suppose une adhésion démocratique, pas juste une innovation technologique.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 1100
+    },
+    {
+      "id": 37,
+      "section": "analyse",
+      "speaker": "host",
+      "text": "Et là, on touche à un point délicat. Il dit quelque part dans le cours 5 une phrase qui m'avait marqué, sur la démocratie.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 38,
+      "section": "analyse",
+      "speaker": "expert",
+      "text": "Oui, il dit : une démocratie, c'est un système remontant, ou plus exactement une pyramide inversée. Ce qu'il entend par là, c'est que dans une démocratie, le pouvoir part du bas et remonte vers le haut. Et donc, si on veut que les décideurs politiques prennent au sérieux la contrainte physique, il faut que les citoyens en bas la comprennent et la portent. Sinon, ça ne se fera pas. Et c'est pour ça qu'il fait ces cours, d'ailleurs. Sa pédagogie, c'est un acte politique au sens premier.",
+      "emotion": "passionate",
+      "pause_after_ms": 1100
+    },
+    {
+      "id": 39,
+      "section": "analyse",
+      "speaker": "host",
+      "text": "Donc il mise sur la formation des citoyens pour faire bouger les choses. C'est un pari qui peut paraître long, mais qui est cohérent avec sa vision.",
+      "emotion": "engaged",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 40,
+      "section": "analyse",
+      "speaker": "expert",
+      "text": "Tout à fait. Bon, et si on revient à ta question initiale, Alex, sur ce qu'il faut retenir de ces huit cours ? Je dirais qu'il y a trois choses qui restent vraiment en tête.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 700
+    },
+    {
+      "id": 41,
+      "section": "analyse",
+      "speaker": "expert",
+      "text": "Premièrement, le cadre physique prime. L'énergie, c'est de la matière transformée. On ne peut pas faire de la croissance matérielle infinie sur une planète finie. C'est un point de départ qu'il faut accepter pour pouvoir discuter sérieusement.",
+      "emotion": "serious",
+      "pause_after_ms": 900
+    },
+    {
+      "id": 42,
+      "section": "analyse",
+      "speaker": "expert",
+      "text": "Deuxièmement, l'inertie climatique est notre pire ennemi. Ce qu'on a déjà émis va rester dans le système pendant des siècles. Donc on est dans une course contre la montre, mais une course où on ne verra pas le résultat. C'est pour les générations futures qu'on agit, pas pour nous.",
+      "emotion": "serious",
+      "pause_after_ms": 1000
+    },
+    {
+      "id": 43,
+      "section": "analyse",
+      "speaker": "expert",
+      "text": "Et troisièmement, la solution n'est pas unique. C'est un mix : nucléaire, renouvelables, sobriété, efficacité. Aucun de ces quatre n'est la panacée. C'est un paquet. Et il faut accepter ça, parce que ça veut dire qu'on ne peut pas se contenter d'un seul angle d'attaque, qu'il soit techno-optimiste ou décroissant radical.",
+      "emotion": "balanced",
+      "pause_after_ms": 1100
+    },
+    {
+      "id": 44,
+      "section": "analyse",
+      "speaker": "host",
+      "text": "Et là, je vais te poser la question qui fâche. Est-ce que Jancovici n'est pas un peu trop techno-pessimiste ? Ou dit autrement, est-ce qu'il ne sous-estime pas la capacité d'adaptation de l'humanité ?",
+      "emotion": "skeptical",
+      "pause_after_ms": 700
+    },
+    {
+      "id": 45,
+      "section": "analyse",
+      "speaker": "expert",
+      "text": "C'est une critique qu'on peut lui faire, oui. Et je pense qu'il faut la prendre au sérieux. Premièrement, il raisonne beaucoup à partir de la France et de l'OCDE. L'Inde, l'Afrique, une grande partie de l'Asie, il en parle peu. Or, c'est là que se joue une grande partie de la croissance énergétique des prochaines décennies. Deuxièmement, son pari sur la rationalité politique est très fort. Il suppose que les démocraties vont finir par faire des choix de sobriété. L'Histoire nous montre que ce n'est pas garanti.",
+      "emotion": "balanced",
+      "pause_after_ms": 1200
+    },
+    {
+      "id": 46,
+      "section": "analyse",
+      "speaker": "expert",
+      "text": "Et troisièmement, il a parfois un mépris pour le low-tech, alors que des solutions low-tech bien conçues peuvent avoir un rôle. Il assimile un peu vite sobriété à retour en arrière, alors que sobriété bien pensée peut être une sophistication. Mais en même temps, sa force, c'est qu'il pose les contraintes physiques en premier. Et c'est une démarche qu'on ne peut pas balayer.",
+      "emotion": "thoughtful",
+      "pause_after_ms": 1100
+    },
+    {
+      "id": 47,
+      "section": "analyse",
+      "speaker": "host",
+      "text": "Donc au final, ce qu'on retient, c'est que Jancovici est un formidable pédagogue, un thermodynamicien rigoureux, et qu'il a probablement raison sur le cadre. Sur les solutions précises, le débat reste ouvert. Et c'est sain que ça le soit.",
+      "emotion": "engaged",
+      "pause_after_ms": 700
+    },
+    {
+      "id": 48,
+      "section": "analyse",
+      "speaker": "expert",
+      "text": "Oui, et c'est pour ça que ses cours valent le détour. Même quand on n'est pas d'accord avec lui, on sort plus intelligent. Et c'est pas rien.",
+      "emotion": "warm",
+      "pause_after_ms": 800
+    },
+    {
+      "id": 49,
+      "section": "outro",
+      "speaker": "host",
+      "text": "Parfait. On va s'arrêter là pour aujourd'hui. Marc, merci beaucoup pour cette plongée dans les cours de Jancovici. Pour ceux qui veulent aller plus loin, on a mis les liens vers les huit cours en description. C'est du contenu en accès libre, et c'est vraiment passionnant.",
+      "emotion": "friendly",
+      "pause_after_ms": 600
+    },
+    {
+      "id": 50,
+      "section": "outro",
+      "speaker": "host",
+      "text": "Et pour le prochain épisode, on va passer à un format un peu différent. On va prendre deux visions qui s'affrontent sur le sujet de l'énergie, et les faire dialoguer. Jancovici versus Amory Lovins, le pape américain des renouvelables purs. Ça va être électrique. À très vite !",
+      "emotion": "enthusiastic",
+      "pause_after_ms": 800
+    },
+    {
+      "id": 51,
+      "section": "outro",
+      "speaker": "expert",
+      "text": "À bientôt !",
+      "emotion": "warm",
+      "pause_after_ms": 0
+    }
+  ],
+  "post_production_notes": {
+    "music_intro": "soft ambient, 10s fade in",
+    "music_outro": "same ambient, 15s fade out",
+    "music_transitions": "subtle 2s sting between major sections",
+    "sfx": "none needed, keep it clean and serious",
+    "background_image_for_video": "thermodynamic diagram, fading slowly"
+  }
+}
