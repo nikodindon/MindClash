@@ -22,6 +22,14 @@ episodes/**/video.mp4
 assets/voices/*.bin
 assets/voices/*.onnx
 
+# TTS models (regenerable from HuggingFace, too big for Git)
+models/**/*.onnx
+models/**/*.bin
+models/**/*.gguf
+models/**/*.pt
+models/**/*.pth
+models/**/*.safetensors
+
 # Config secrets
 .env
 config/mindclash.yaml

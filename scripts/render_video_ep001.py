@@ -16,16 +16,22 @@ EP = ROOT / 'episodes/EP001_jancovici-synthesis'
 
 # Inputs
 AUDIO = EP / 'final.wav' if (EP / 'final.wav').exists() else EP / 'master.wav'
-THUMB = ROOT / 'assets/thumbnails/background.jpg'
-OUT = EP / 'video.mp4'
 
-if not AUDIO.exists():
-    print(f'ERROR: Audio not found: {AUDIO}')
-    print('  Run produce_ep001.py first, then mix_ep001.py')
-    raise SystemExit(1)
+# Look for any background image (jpg or png)
+bg_candidates = [
+    ROOT / 'assets/thumbnails/background.png',
+    ROOT / 'assets/thumbnails/background.jpg',
+    ROOT / 'assets/thumbnails/background_default.png',
+]
+THUMB = None
+for c in bg_candidates:
+    if c.exists():
+        THUMB = c
+        break
 
-if not THUMB.exists():
-    print(f'WARNING: Background image not found: {THUMB}')
+if THUMB is None:
+    print(f'WARNING: No background image found in assets/thumbnails/')
+    print('  Run: python scripts/generate_background.py "Your Topic"')
     print('  Using a simple colored background instead')
     # Generate a simple solid color background
     THUMB = '/tmp/background.png'
@@ -34,6 +40,8 @@ if not THUMB.exists():
         '-f', 'lavfi', '-i', f'color=c=#0a0e1a:s=1280x720:d=1',
         '-frames:v', '1', THUMB
     ], check=True, capture_output=True)
+
+OUT = EP / 'video.mp4'
 
 # Get audio duration
 import wave
