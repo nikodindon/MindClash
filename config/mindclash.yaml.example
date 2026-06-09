@@ -1,0 +1,56 @@
+# MindClash — Main Configuration
+# Copy this file to mindclash.yaml and edit to match your setup.
+
+# ── LLM Backend ───────────────────────────────────────────────────────────────
+llm:
+  backend: llamacpp-local          # llamacpp-local | ollama | openai-compat
+  base_url: "http://localhost:8080/v1"
+  model: "Qwen3.6-35B-A3B-UD-IQ4_XS.gguf"
+  max_tokens: 4096
+  temperature: 0.7
+  context_window: 32768
+
+# ── Transcription ─────────────────────────────────────────────────────────────
+transcription:
+  backend: faster-whisper
+  model: large-v3
+  device: cuda
+  compute_type: int8
+  language: auto
+
+# ── Analysis ──────────────────────────────────────────────────────────────────
+analysis:
+  default_depth: extreme           # standard | deep | extreme
+  language_output: en
+
+# ── Debate Engine ─────────────────────────────────────────────────────────────
+debate:
+  default_rounds: 5
+  moderator_model: same
+  max_context_tokens: 24000
+  scoring: true
+  fact_check: basic                # basic | none | strict
+
+# ── TTS ───────────────────────────────────────────────────────────────────────
+tts:
+  default_engine: orpheus          # orpheus | kokoro | piper
+  sample_rate: 48000
+  output_format: wav
+
+# ── Audio Production ──────────────────────────────────────────────────────────
+audio:
+  background_music_volume: 0.08
+  intro_duration_sec: 8
+  outro_duration_sec: 12
+  normalize_lufs: -16
+
+# ── Knowledge Base ────────────────────────────────────────────────────────────
+knowledge_base:
+  root: ./knowledge_base
+  cache_dir: ./cache
+  max_context_per_person: 50000
+
+# ── Output ────────────────────────────────────────────────────────────────────
+output:
+  episodes_dir: ./episodes
+  assets_dir: ./assets

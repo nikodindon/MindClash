@@ -1,0 +1,1 @@
+"""MindClash — debate/scorer.py."""

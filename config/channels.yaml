@@ -1,0 +1,33 @@
+# MindClash — YouTube Channel Configuration
+
+channel:
+  name: "MindClash"
+  handle: "@MindClashAI"
+  description: >
+    AI-synthesized debates and deep dives between the world's most brilliant minds.
+    Powered by real speeches, lectures and interviews. Every argument is sourced.
+  language: en
+  category: Education
+  tags:
+    - AI debates
+    - intellectual debates
+    - science podcast
+    - philosophy
+    - economics
+    - MindClash
+
+  playlist_ids:
+    debates:   ""        # Fill after creating YouTube playlists
+    synthesis: ""
+
+podcast:
+  rss_title: "MindClash"
+  rss_description: >
+    Structured AI debates and synthesis podcasts grounded in real thinkers' ideas.
+  author: "MindClash AI"
+  email: ""
+  website: ""
+  language: en
+  explicit: false
+  category: "Society & Culture"
+  subcategory: "Philosophy"

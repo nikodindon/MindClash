@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# MindClash runtime
+cache/
+outputs/
+knowledge_base/**/*.mp3
+knowledge_base/**/*.wav
+episodes/**/audio_segments/
+episodes/**/final_audio.mp3
+episodes/**/final_video.mp4
+assets/voices/*.bin
+assets/voices/*.onnx
+
+# Config secrets
+.env
+config/mindclash.yaml
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1 @@
+"""MindClash — knowledge/indexer.py."""

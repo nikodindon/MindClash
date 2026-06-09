@@ -1,0 +1,1 @@
+"""MindClash — transcribe/base.py."""

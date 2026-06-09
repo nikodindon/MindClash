@@ -1,0 +1,45 @@
+# MindClash — Voice Profiles
+# Assign TTS voices to recurring characters.
+
+voices:
+  host_neutral:
+    engine: orpheus
+    model: orpheus-en-neutral
+    speed: 1.0
+    pitch: 0
+    style: "calm, clear, authoritative"
+
+  expert_french_male:
+    engine: orpheus
+    model: orpheus-en-french-accent
+    speed: 0.95
+    style: "precise, data-driven, slightly provocative"
+
+  expert_american_male:
+    engine: orpheus
+    model: orpheus-en-us-male
+    speed: 1.0
+    style: "passionate, optimistic, visionary"
+
+  expert_british_male:
+    engine: orpheus
+    model: orpheus-en-gb-male
+    speed: 0.98
+    style: "measured, academic, nuanced"
+
+  moderator:
+    engine: orpheus
+    model: orpheus-en-neutral
+    speed: 1.0
+    style: "neutral, firm, engaging"
+
+# Person → voice mapping
+person_voices:
+  jancovici: expert_french_male
+  lovins:    expert_american_male
+  lecun:     expert_french_male
+  hinton:    expert_british_male
+  piketty:   expert_french_male
+  acemoglu:  expert_american_male
+  harari:    expert_british_male
+  chomsky:   expert_american_male

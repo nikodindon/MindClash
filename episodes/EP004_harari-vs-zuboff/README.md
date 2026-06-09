@@ -1,0 +1,27 @@
+# EP004 — Harari vs Zuboff
+
+## Status
+- [ ] Debate generated
+- [ ] Script written
+- [ ] TTS rendered
+- [ ] Audio mixed
+- [ ] Video generated
+- [ ] Published
+
+## Persons
+- **Person A:** Harari
+- **Person B:** Zuboff
+
+## Topic
+> Surveillance capitalism: inevitable or resistible?
+
+## Files
+| File | Description |
+|------|-------------|
+| `debate_raw.json` | Arena debate output |
+| `script.json` | Podcast script (segmented) |
+| `audio_segments/` | Individual TTS segments |
+| `final_audio.mp3` | Master audio |
+| `final_video.mp4` | YouTube-ready video |
+| `thumbnail.png` | Episode thumbnail |
+| `show_notes.md` | YouTube description + timestamps |

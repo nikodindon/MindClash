@@ -1,0 +1,1 @@
+"""MindClash — analyze/base.py."""

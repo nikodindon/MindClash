@@ -1,0 +1,1 @@
+"""MindClash — knowledge/person.py."""

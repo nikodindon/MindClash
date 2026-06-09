@@ -1,0 +1,1 @@
+"""MindClash — publish/metadata.py."""

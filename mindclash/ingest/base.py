@@ -1,0 +1,1 @@
+"""MindClash — ingest/base.py."""
