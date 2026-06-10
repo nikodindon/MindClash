@@ -47,6 +47,42 @@
   "segments": [
     {
       "id": 1,
+      "tour": 0,
+      "tour_name": "intro_presents",
+      "speaker": "moderator",
+      "text": "Before we dive in, let me quickly introduce tonight's two debaters. First, on my left, Jean-Marc Jancovici.",
+      "emotion": "informing",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 2,
+      "tour": 0,
+      "tour_name": "intro_presents",
+      "speaker": "moderator",
+      "text": "Jancovici is a French mining engineer, the head of the Shift Project, and one of the most listened-to voices in the French climate and energy debate. He's been teaching at the Paris School of Mines for years, and his lectures on energy, climate, and nuclear have become a reference.",
+      "emotion": "informing",
+      "pause_after_ms": 800
+    },
+    {
+      "id": 3,
+      "tour": 0,
+      "tour_name": "intro_presents",
+      "speaker": "moderator",
+      "text": "Across from him, Amory Lovins. Lovins is an American physicist, the founder and chief scientist of the Rocky Mountain Institute, and the man who literally coined the word 'negawatt'.",
+      "emotion": "informing",
+      "pause_after_ms": 500
+    },
+    {
+      "id": 4,
+      "tour": 0,
+      "tour_name": "intro_presents",
+      "speaker": "moderator",
+      "text": "For over fifty years, Lovins has argued that we don't need new power plants — we need to stop wasting the ones we already have. His 1976 manifesto, Soft Energy Paths, is still shaking the energy debate today.",
+      "emotion": "informing",
+      "pause_after_ms": 1000
+    },
+    {
+      "id": 5,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "moderator",
@@ -55,7 +91,7 @@
       "pause_after_ms": 400
     },
     {
-      "id": 2,
+      "id": 6,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "debater_a",
@@ -64,7 +100,7 @@
       "pause_after_ms": 600
     },
     {
-      "id": 3,
+      "id": 7,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "debater_b",
@@ -73,7 +109,7 @@
       "pause_after_ms": 600
     },
     {
-      "id": 4,
+      "id": 8,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "debater_a",
@@ -82,7 +118,7 @@
       "pause_after_ms": 600
     },
     {
-      "id": 5,
+      "id": 9,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "debater_b",
@@ -91,7 +127,7 @@
       "pause_after_ms": 600
     },
     {
-      "id": 6,
+      "id": 10,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "debater_a",
@@ -100,7 +136,7 @@
       "pause_after_ms": 600
     },
     {
-      "id": 7,
+      "id": 11,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "debater_b",
@@ -109,7 +145,7 @@
       "pause_after_ms": 600
     },
     {
-      "id": 8,
+      "id": 12,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "debater_a",
@@ -118,7 +154,7 @@
       "pause_after_ms": 600
     },
     {
-      "id": 9,
+      "id": 13,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "debater_b",
@@ -127,7 +163,7 @@
       "pause_after_ms": 600
     },
     {
-      "id": 10,
+      "id": 14,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "debater_a",
@@ -136,7 +172,7 @@
       "pause_after_ms": 600
     },
     {
-      "id": 11,
+      "id": 15,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "debater_b",
@@ -145,7 +181,7 @@
       "pause_after_ms": 600
     },
     {
-      "id": 12,
+      "id": 16,
       "tour": 1,
       "tour_name": "plaidoyer",
       "speaker": "moderator",
@@ -154,7 +190,7 @@
       "pause_after_ms": 400
     },
     {
-      "id": 13,
+      "id": 17,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "moderator",
@@ -163,7 +199,7 @@
       "pause_after_ms": 1500
     },
     {
-      "id": 14,
+      "id": 18,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_a",
@@ -172,7 +208,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 15,
+      "id": 19,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_b",
@@ -181,7 +217,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 16,
+      "id": 20,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_a",
@@ -190,7 +226,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 17,
+      "id": 21,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_b",
@@ -199,7 +235,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 18,
+      "id": 22,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_a",
@@ -208,7 +244,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 19,
+      "id": 23,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_b",
@@ -217,7 +253,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 20,
+      "id": 24,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_a",
@@ -226,7 +262,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 21,
+      "id": 25,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_b",
@@ -235,7 +271,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 22,
+      "id": 26,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_a",
@@ -244,7 +280,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 23,
+      "id": 27,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_b",
@@ -253,7 +289,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 24,
+      "id": 28,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_a",
@@ -262,7 +298,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 25,
+      "id": 29,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "debater_b",
@@ -271,7 +307,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 26,
+      "id": 30,
       "tour": 2,
       "tour_name": "refutation",
       "speaker": "moderator",
@@ -280,7 +316,7 @@
       "pause_after_ms": 1500
     },
     {
-      "id": 27,
+      "id": 31,
       "tour": 3,
       "tour_name": "question",
       "speaker": "moderator",
@@ -289,7 +325,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 28,
+      "id": 32,
       "tour": 3,
       "tour_name": "question",
       "speaker": "debater_a",
@@ -298,7 +334,7 @@
       "pause_after_ms": 1000
     },
     {
-      "id": 29,
+      "id": 33,
       "tour": 3,
       "tour_name": "question",
       "speaker": "debater_b",
@@ -307,7 +343,7 @@
       "pause_after_ms": 1000
     },
     {
-      "id": 30,
+      "id": 34,
       "tour": 3,
       "tour_name": "question",
       "speaker": "debater_a",
@@ -316,7 +352,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 31,
+      "id": 35,
       "tour": 3,
       "tour_name": "question",
       "speaker": "debater_b",
@@ -325,7 +361,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 32,
+      "id": 36,
       "tour": 3,
       "tour_name": "question",
       "speaker": "debater_a",
@@ -334,7 +370,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 33,
+      "id": 37,
       "tour": 3,
       "tour_name": "question",
       "speaker": "debater_b",
@@ -343,7 +379,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 34,
+      "id": 38,
       "tour": 3,
       "tour_name": "question",
       "speaker": "debater_a",
@@ -352,7 +388,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 35,
+      "id": 39,
       "tour": 3,
       "tour_name": "question",
       "speaker": "debater_b",
@@ -361,7 +397,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 36,
+      "id": 40,
       "tour": 3,
       "tour_name": "question",
       "speaker": "moderator",
@@ -370,7 +406,7 @@
       "pause_after_ms": 1200
     },
     {
-      "id": 37,
+      "id": 41,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "debater_a",
@@ -379,7 +415,7 @@
       "pause_after_ms": 800
     },
     {
-      "id": 38,
+      "id": 42,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "debater_b",
@@ -388,7 +424,7 @@
       "pause_after_ms": 800
     },
     {
-      "id": 39,
+      "id": 43,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "debater_a",
@@ -397,7 +433,7 @@
       "pause_after_ms": 800
     },
     {
-      "id": 40,
+      "id": 44,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "debater_b",
@@ -406,7 +442,7 @@
       "pause_after_ms": 800
     },
     {
-      "id": 41,
+      "id": 45,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "debater_a",
@@ -415,7 +451,7 @@
       "pause_after_ms": 800
     },
     {
-      "id": 42,
+      "id": 46,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "debater_b",
@@ -424,7 +460,7 @@
       "pause_after_ms": 800
     },
     {
-      "id": 43,
+      "id": 47,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "debater_a",
@@ -433,7 +469,7 @@
       "pause_after_ms": 800
     },
     {
-      "id": 44,
+      "id": 48,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "debater_b",
@@ -442,7 +478,7 @@
       "pause_after_ms": 800
     },
     {
-      "id": 45,
+      "id": 49,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "debater_a",
@@ -451,7 +487,7 @@
       "pause_after_ms": 800
     },
     {
-      "id": 46,
+      "id": 50,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "debater_b",
@@ -460,7 +496,7 @@
       "pause_after_ms": 800
     },
     {
-      "id": 47,
+      "id": 51,
       "tour": 4,
       "tour_name": "conclusion",
       "speaker": "moderator",
@@ -469,7 +505,7 @@
       "pause_after_ms": 1000
     },
     {
-      "id": 48,
+      "id": 52,
       "tour": 5,
       "tour_name": "verdict",
       "speaker": "moderator",
@@ -478,7 +514,7 @@
       "pause_after_ms": 1500
     },
     {
-      "id": 49,
+      "id": 53,
       "tour": 5,
       "tour_name": "verdict",
       "speaker": "moderator",
@@ -487,7 +523,7 @@
       "pause_after_ms": 2000
     },
     {
-      "id": 50,
+      "id": 54,
       "tour": 5,
       "tour_name": "verdict",
       "speaker": "moderator",
@@ -496,7 +532,7 @@
       "pause_after_ms": 1500
     },
     {
-      "id": 51,
+      "id": 55,
       "tour": 5,
       "tour_name": "verdict",
       "speaker": "moderator",
@@ -505,7 +541,7 @@
       "pause_after_ms": 0
     },
     {
-      "id": 52,
+      "id": 56,
       "tour": 6,
       "tour_name": "outro",
       "speaker": "moderator",
@@ -514,7 +550,7 @@
       "pause_after_ms": 1000
     },
     {
-      "id": 53,
+      "id": 57,
       "tour": 6,
       "tour_name": "outro",
       "speaker": "moderator",
@@ -523,7 +559,7 @@
       "pause_after_ms": 1500
     },
     {
-      "id": 54,
+      "id": 58,
       "tour": 6,
       "tour_name": "outro",
       "speaker": "moderator",
@@ -532,7 +568,7 @@
       "pause_after_ms": 1000
     },
     {
-      "id": 55,
+      "id": 59,
       "tour": 6,
       "tour_name": "outro",
       "speaker": "moderator",

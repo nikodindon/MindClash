@@ -87,8 +87,11 @@ intro = fade_in(intro, 2.0)
 outro = fade_out(outro, 3.0)
 
 # Mix
+# NOTE: we skip the intro/outro music beds (currently silence anyway) so the
+# audio starts immediately. To re-enable, uncomment the np.concatenate line.
 print('\nMixing...')
-mixed = np.concatenate([intro, master, outro])
+# mixed = np.concatenate([intro, master, outro])
+mixed = master
 print(f'  Final: {len(mixed)} samples, {len(mixed)/SAMPLE_RATE:.1f}s = {len(mixed)/SAMPLE_RATE/60:.1f} min')
 
 # Write final
