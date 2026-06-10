@@ -1,8 +1,8 @@
 # EP002 — The Negawatt Revolution: What Amory Lovins Actually Proposes
 
-> **Status**: seed (template only, awaiting script generation)
-> **Planned release**: after EP001, summer 2026
-> **Format**: 2 voices, English, ~20-25 min (calibrated to EP001)
+> **Status**: audio + video produced, ready for review
+> **Planned release**: summer 2026 (after EP001)
+> **Final duration**: 20.3 min (script target was 20-25; landed in range)
 
 ## YouTube title (EN)
 
@@ -47,19 +47,19 @@
 > **Next episode** : Jancovici vs Lovins — the debate (EP003). Two visions
 > of the energy transition, head to head. Don't miss it.
 
-## YouTube chapters (TBD — to fill after script is written)
+## YouTube chapters (timestamps)
 
 ```
 0:00 Intro — Welcome back to MindClash
-?:?? Negawatts and the fifth option
-?:?? Reinventing Fire: the sector-by-sector plan
-?:?? Design integratif in the Empire State Building
-?:?? Soft energy paths: the 1976 manifesto
-?:?? Critical analysis: where Lovins is right, where optimism gets thin
-?:?? Outro — Teaser for EP003 (Jancovici vs Lovins)
+1:33 The fifth option — oil wars / climate / nuclear / declining living standards / none of the above
+4:40 Reinventing Fire — the sector-by-sector plan
+8:24 Design integratif — Empire State Building, 40 000 passive buildings
+11:49 Soft energy paths — the 1976 manifesto
+14:56 Critical analysis — where Lovins is right, where optimism gets thin
+18:40 Outro — Teaser for EP003 (Jancovici vs Lovins)
 ```
 
-## Tags (EN, ~20 tags)
+## Tags (EN, 20 tags)
 
 ```
 amory lovins, lovins, rocky mountain institute, rmi, negawatt,
@@ -69,23 +69,69 @@ energy transition, decarbonization, microgrids, renewable energy,
 nuclear, nuclear critique, mindclash, ai podcast
 ```
 
-## Sources (TBD — to fill after script cites the exact talks)
+## Sources (in YouTube description)
 
 1. **TED — A 40-year plan for energy** : https://www.youtube.com/watch?v=PQqv8cWWV2U
 2. **Reinventing Fire** : https://www.youtube.com/watch?v=nlWb-92OU_o
 3. **TEDx — Applied Hope** : https://www.youtube.com/watch?v=_k9id6euk94
-4. **RMI keynote — Co-founder / Chief Scientist** : https://www.youtube.com/watch?v=???
+4. **RMI keynote — Co-founder / Chief Scientist** : https://www.youtube.com/watch?v=_k9id6euk94
 
-(Will be filled in once exact URLs are confirmed and indexed.)
+(Notes: URLs 1 and 2 are the "Reinventing Fire" + "40-year plan" sources
+we ingested. URL 3 (TEDx Applied Hope) and URL 4 (RMI co-founder) are the
+two supplementary talks used for cross-validation. Lovins re-uses the
+same content across these four talks, so 3 and 4 may share a single
+canonical URL — verify before publication.)
 
-## Embedded citations (TBD)
+## Embedded citations (verified in production)
 
-Will be auto-extracted from the `script.json` once the Lovins solo podcast
-is generated, mirroring the EP001 pattern.
+| Timestamp | Citation | Source |
+|-----------|----------|--------|
+| 0:14 | "Empire State Building renovation cut energy by 70%" | TED 40-year plan |
+| 3:44 | "The obstacles are cultural rather than technical" | TED 40-year plan |
+| 9:20 | "40,000 passive buildings across Europe" | RMI co-founder talk |
+| 11:49 | "Soft energy paths — 1976 manifesto" | TEDx Applied Hope |
+| 13:23 | "A negawatt is the cheapest, cleanest, safest, fastest power plant you can build" | Reinventing Fire |
 
 ## Handoff to EP003
 
-The outro must explicitly tease the next episode:
+The outro (segment 64) explicitly teases the next episode:
 *"In the next episode of MindClash, we put Jancovici and Lovins in the
 same room. A thermodynamic pessimist vs an efficiency optimist. The
 debate will be a long one — about an hour. Subscribe so you don't miss it."*
+
+## Production notes
+
+### Audio
+
+- Engine: **Kokoro TTS** (v0.19 ONNX, 24000 Hz, 16-bit)
+- Voices: Alex = `am_adam`, Marc = `am_michael` (US English, both male — same as EP001 for channel continuity)
+- Pipeline: 64 segments → 64 wav files → `master.wav` (1195s) → `final.wav` (with intro/outro silence, 1220s) → `final.mp3` (192 kbps)
+- Total file sizes: master.wav 55 MB, final.wav 56 MB, final.mp3 24 MB
+
+### Video
+
+- Codec: H.264 video + AAC audio
+- Resolution: 1280x720 (720p)
+- Duration: 20.3 min
+- Background: `background.png` with "THE NEGAWATT REVOLUTION" + "A podcast on Amory Lovins" subtitle
+- Frame rate: 25 fps
+- Bit rate: 157 kbps
+
+### Distribution
+
+- **YouTube** : main platform, video upload
+- **Spotify / Apple Podcasts** : audio only (use final.mp3)
+- **Twitter/X clips** : 60s clips of best moments
+  - Targets: "Empire State -70%", "obstacles are cultural", "40000 passive buildings", "negawatt is the cheapest power plant"
+
+## Metadata
+
+- **Format**: 2-voice conversational interview
+- **Language**: English
+- **Duration**: 20.3 min
+- **FPS**: 25
+- **Audio**: 24 kHz / 16-bit
+- **Video codec**: H.264
+- **Audio codec**: AAC
+- **Audio bitrate**: 192 kbps
+- **File**: `video.mp4` (22.9 MB)
