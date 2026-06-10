@@ -56,12 +56,12 @@
 
 ```
 0:00 Meet the debaters — Bella introduces Jancovici & Lovins (4 mini-segments)
-1:41 Tour 1 — Plaidoyer (opening statements)
-6:44 Tour 2 — Réfutation (debaters attack each other)
-12:39 Tour 3 — Question (trap questions)
-16:52 Tour 4 — Conclusion (final positions)
-21:30 Verdict — final score + convergence analysis
-23:11 Outro — teaser for EP004 (Zuboff)
+1:38 Tour 1 — Plaidoyer (opening statements)
+6:32 Tour 2 — Réfutation (debaters attack each other)
+12:15 Tour 3 — Question (trap questions)
+16:20 Tour 4 — Conclusion (final positions)
+20:50 Verdict — final score + convergence analysis
+22:28 Outro — teaser for EP004 (Zuboff)
 ```
 
 ## Tags (EN, ~20 tags)
