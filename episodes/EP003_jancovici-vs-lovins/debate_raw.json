@@ -1,0 +1,55 @@
+{
+  "topic": "Is nuclear the only viable path to carbon neutrality by 2050?",
+  "debut": "2026-06-10T20:12:34",
+  "score_a": 10,
+  "score_b": 7,
+  "tours": [
+    {
+      "id": 1,
+      "name": "plaidoyer",
+      "instructions": "Each debater presents their opening thesis. Jancovici (debater_a) opens with the production-side argument: civilization is a thermodynamic system, scale matters, nuclear is the only proven dispatchable low-carbon source that can replace fossil baseload at scale. Lovins (debater_b) follows with the waste-side argument: 4/5 of energy is wasted through inefficient design, negawatts + design integratif + renewables can do the job at lower cost. The moderator opens the tour, then each debater speaks for ~5 minutes total. No attacks yet — just position-setting.",
+      "scoring": {
+        "tour": 1,
+        "debater_a": 2,
+        "debater_b": 2,
+        "rationale": "Both debaters establish strong foundational arguments. Jancovici (A) grounds his case in thermodynamics and industrial scale (solid), while Lovins (B) counters with energy waste statistics and efficiency examples (solid). A slight edge to B for citing specific building renovation stats, but A's physics framing is equally strong."
+      }
+    },
+    {
+      "id": 2,
+      "name": "refutation",
+      "instructions": "Each debater attacks the other's opening thesis. Jancovici attacks Lovins's optimism: intermittency of renewables, the baseload problem, the hidden costs of storage, the realism of building 40,000+ retrofits. Lovins attacks Jancovici's nuclear enthusiasm: cost overruns (Vogtle, Hinkley Point, Olkiluoto), the 10-15 year build time, the stranded asset risk, the 'efficiency is 10x cheaper per ton of CO2' argument. Moderator scores 0-3 per camp at the end of this tour.",
+      "scoring": {
+        "tour": 2,
+        "debater_a": 3,
+        "debater_b": 2,
+        "rationale": "Jancovici delivers a strong rebuttal by directly addressing the 'baseload' critique with specific industrial use cases (steel mills, chemicals) and highlighting the fragility of renewable-only grids. Lovins argues cost and resilience well but relies more on general principles ('false economy') compared to A's specific industrial constraints."
+      }
+    },
+    {
+      "id": 3,
+      "name": "question",
+      "instructions": "Each debater poses a trap question to the other. Jancovici asks: 'If renewables + efficiency are so cheap, why has the US installed more nuclear capacity than solar in the last 5 years?' Lovins asks: 'If nuclear is necessary, why is China — your model of state-led industrial policy — building twice as much solar + wind as nuclear?' Then each debater has 1-2 minutes to respond. Moderator notes who answered better. Scoring at end of tour.",
+      "scoring": {
+        "tour": 3,
+        "debater_a": 2,
+        "debater_b": 2,
+        "rationale": "A balanced trap round. Jancovici effectively uses the China example to show the necessity of nuclear alongside renewables. Lovins counters with the efficiency of retrofitting and the cost of nuclear waste. Both handle the pressure well, but neither completely dismantles the other's core premise."
+      }
+    },
+    {
+      "id": 4,
+      "name": "conclusion",
+      "instructions": "Each debater delivers a 4-minute final position. No new arguments — just the strongest version of their case. Jancovici concludes: nuclear is necessary, not sufficient — we also need renewables and efficiency, but the dispatchability question is real. Lovins concludes: nuclear is not necessary, the market is voting with its dollars, and the only honest path is through efficiency + renewables + grids. Moderator renders a final verdict at the end, noting both score and rare points of convergence.",
+      "scoring": {
+        "tour": 4,
+        "debater_a": 3,
+        "debater_b": 1,
+        "rationale": "Jancovici closes with a powerful synthesis of physical limits ('wisdom requires acknowledging constraints') and specific high-energy industrial needs. Lovins concludes with a somewhat weaker 'political will' argument, which feels less robust against the 'physics' constraint established earlier, resulting in a lower score for impact and specificity."
+      }
+    }
+  ],
+  "vainqueur": "Jancovici",
+  "vainqueur_texte": "Final score: Jancovici 10/12, Lovins 7/12",
+  "num_segments": 55
+}
