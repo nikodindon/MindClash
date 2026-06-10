@@ -99,6 +99,60 @@ Position constante depuis 1976 :
 | **Reinventing Fire** | Programme sectoriel : 4 secteurs × solutions existantes = sortie fossile sans invention nouvelle |
 | **« Doing more with less »** | Pas décroissance, pas austérité — **plus de service énergétique pour moins de matière** |
 
+## Red lines (ce qu'il sous-estime ou esquive)
+
+> Généré via Qwen 3.6 35B-A3B (juin 2026) à partir des 4 sources ingérées.
+> Filtre : uniquement les angles morts PRÉSENTS dans le discours de Lovins
+> (ou qui émergent naturellement en juxtaposant ses claims). Pas d'attaque
+> externe fabriquée.
+
+- **Surévaluation de la résilience des réseaux décentralisés face aux
+  risques systémiques et géopolitiques.** *(TEDx / RMI keynote)*
+  Sa confiance dans les micro-réseaux ignore les vulnérabilités des
+  chaînes d'approvisionnement mondiales (terres rares, batteries) et
+  les risques de cyberguerre / sabotage sur l'infrastructure numérique
+  sous-jacente.
+
+- **Minimisation des impacts environnementaux et sociaux de l'extraction
+  minière pour les technologies vertes.** *(Reinventing Fire / Key points)*
+  Lovins se concentre sur l'efficacité opérationnelle et le coût final,
+  mais omet l'empreinte écologique du lithium, cobalt, cuivre — traitant
+  implicitement ces coûts comme secondaires par rapport à la réduction
+  des émissions carbone.
+
+- **Optimisme technologique excessif sur l'IA et la disponibilité des
+  matériaux critiques.** *(Key points : IA + puces optiques)*
+  L'affirmation que l'IA consommera peu d'énergie grâce à l'innovation
+  (puces optiques) repose sur des hypothèses non prouvées à l'échelle
+  industrielle, ignorant la soif énergétique actuelle des data centers
+  et la pénurie physique de certains matériaux.
+
+- **Déconnexion entre viabilité économique locale et réalités politiques
+  globales.** *(Verbatim quotes : « obstacles are cultural rather than
+  technical »)*. En attribuant les freins à la culture / politique locale,
+  Lovins néglige les barrières structurelles profondes : subventions
+  fossiles massives dans les pays en développement, intérêts
+  géopolitiques nationaux qui résistent à la logique de marché.
+
+- **Réductionnisme de la complexité sociale via l'« espoir appliqué »
+  individualiste.** *(Applied Hope / Reinventing Fire)*
+  La rhétorique de l'espoir appliqué responsabilise les acteurs
+  économiques et les citoyens tout en évitant une critique radicale
+  des structures de pouvoir — vision technocratique qui élude les
+  questions de justice sociale et de redistribution.
+
+## Questions ouvertes (à mettre en débat)
+
+1. Si les obstacles sont principalement culturels et politiques, comment
+   la RMI propose-t-elle de surmonter la résistance des États-nations dont
+   la souveraineté et la sécurité sont encore intrinsèquement liées au
+   contrôle des ressources fossiles ?
+2. Comment concilier la promesse d'une transition « sans nouvelles
+   inventions » avec la nécessité urgente de déployer à l'échelle mondiale
+   des technologies de stockage et de transport d'énergie qui n'existent
+   pas encore à un coût compétitif, et sans dépendance aux chaînes
+   d'approvisionnement critiques ?
+
 ## Citations verbatim (sélection — 17 disponibles dans `reinventing-fire`)
 
 > « We do solutions, not problems. We do transformation, not incrementalism,
