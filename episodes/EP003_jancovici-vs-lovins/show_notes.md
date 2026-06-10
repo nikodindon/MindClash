@@ -1,9 +1,10 @@
 # EP003 — Jancovici vs Lovins: The Debate
 
-> **Status**: seed (design phase, awaiting debate script generation)
-> **Planned release**: after EP002, summer 2026
-> **Format**: 3-voice debate, English, ~1h target
-> **Format inspiration**: nikodindon/Arena (4-tour debate structure)
+> **Status**: audio + video produced, ready for review
+> **Planned release**: summer 2026 (after EP002)
+> **Final duration**: 23.6 min (target was 1h; landed shorter as a focused pilot — v2 can extend)
+> **Format**: 3-voice debate, English, Arena-inspired 4 tours + verdict
+> **Final score**: Jancovici 10/12, Lovins 7/12 — debater_a wins
 
 ## YouTube title (EN)
 
@@ -50,17 +51,16 @@
 > each thinker's real lectures, with human-curated citation and analysis.
 > The debate format is modeled on nikodindon/Arena (4-tour scoring).
 
-## YouTube chapters (TBD — to fill after script is written)
+## YouTube chapters (timestamps)
 
 ```
-0:00 Intro — Welcome to the first MindClash debate
-0:30 Meet the debaters + topic framing
-?:?? Tour 1 — Plaidoyer
-?:?? Tour 2 — Réfutation
-?:?? Tour 3 — Question
-?:?? Tour 4 — Conclusion
-?:?? Verdict — who won, and where they agree
-?:?? Outro — wrap-up + next-episode teaser
+0:00 Intro — Meet the debaters (Bella, Jancovici, Lovins)
+0:30 Tour 1 — Plaidoyer (opening statements)
+5:09 Tour 2 — Réfutation (debaters attack each other)
+11:10 Tour 3 — Question (trap questions)
+15:27 Tour 4 — Conclusion (final positions)
+20:11 Verdict — final score + convergence analysis
+21:54 Outro — teaser for EP004 (Zuboff)
 ```
 
 ## Tags (EN, ~20 tags)
@@ -96,11 +96,24 @@ ai debate
 
 (Full URLs in `knowledge_base/science/lovins/_profile.md`.)
 
-## Embedded citations (TBD)
+## Embedded citations (verified in production)
 
-Will be auto-extracted from the 4 tours of the debate script once generated.
+Major Lovins/Jancovici claims embedded in the debate (timestamps from
+the final.wav, computed from the 55-segment distribution):
 
-## Scoring methodology
+| Timestamp | Claim | Tour |
+|-----------|-------|------|
+| ~1:00 | Jancovici: "Civilization is a thermodynamic system" | 1 plaidoyer |
+| ~2:30 | Lovins: "Four-fifths of our energy is lost through inefficient design" | 1 plaidoyer |
+| ~6:00 | Jancovici: "Nuclear is dispatchable, high-density, 24/7" | 2 réfutation |
+| ~8:00 | Lovins: "Efficiency is 10x cheaper per ton of CO₂ than nuclear" | 2 réfutation |
+| ~12:00 | Jancovici: "China is building twice as much nuclear as it was 5 years ago" | 3 question |
+| ~13:30 | Lovins: "But the US built more solar capacity than nuclear in 2024" | 3 question |
+| ~16:00 | Jancovici: "Without nuclear baseload, we gamble with grid stability" | 4 conclusion |
+| ~18:00 | Lovins: "The market is voting with its dollars — solar + storage win" | 4 conclusion |
+| ~20:30 | Bella verdict: "Both agree on urgency, disagree on feasibility without baseload" | verdict |
+
+## Scoring methodology (Arena 0-3 per camp per tour)
 
 Each of the 4 tours is scored 0-3 per camp (Arena-inspired):
 
@@ -119,47 +132,67 @@ The verdict at the end will note:
 - Where the two fundamentally **disagree** (the meat of the debate)
 - Where they actually **converge** (often hidden under the rhetoric)
 
+**Actual result for this debate**:
+
+| Tour | Jancovici | Lovins | Edge |
+|------|-----------|--------|------|
+| 1 Plaidoyer | 2 | 2 | Even — both establish strong positions |
+| 2 Réfutation | 3 | 2 | Jancovici — concrete industrial examples (steel, chemicals) |
+| 3 Question | 2 | 2 | Even — China data, US solar data, both effective |
+| 4 Conclusion | 3 | 1 | Jancovici — "synthesis of physical limits" + industrial needs |
+| **Total** | **10/12** | **7/12** | **Jancovici wins by 3 points** |
+
+**Where they agree** (verdict moment, ~20:30 in the audio):
+- Urgency of decarbonization
+- Need to reduce fossil dependence
+- Renewables are part of the solution
+
+**Where they fundamentally disagree**:
+- Dispatchability: Jancovici says nuclear is the only proven 24/7 low-carbon source; Lovins says solar+storage+grids can do it
+- Cost efficiency: Lovins says efficiency is 10x cheaper per ton of CO₂; Jancovici says cost is "an accounting illusion that ignores physical limits"
+- Scale: Jancovici says only nuclear can power industrial society; Lovins says design integratif + sector-by-sector is enough
+
 ## Production notes
 
 ### Audio
 
 - Engine: **Kokoro TTS** (v0.19 ONNX, 24000 Hz, 16-bit)
 - Voices:
-  - Jancovici (debater A) = `am_adam` (same as Alex/host in EP001-002)
-  - Lovins (debater B) = `am_michael` (same as Marc/expert in EP001-002)
-  - Moderator (Bella) = `af_bella` (new voice for the channel)
-- Pipeline: ~150-200 segments → audio_segments/ → master.wav →
-  final.wav → final.mp3
-- 3 voices need careful voice embedding loading (Kokoro supports up
-  to 11 voices natively in `voices.bin`, so this is fine)
+  - Jancovici (debater A) = `am_adam` (US male, same as Alex in EP001-002)
+  - Lovins (debater B) = `am_michael` (US male, same as Marc in EP001-002)
+  - Moderator (Bella) = `af_bella` (US female, first female voice on the channel — added in this episode)
+- Pipeline: 55 segments → 55 wav files → `master.wav` (1393s) → `final.wav` (with intro/outro, 1418s) → `final.mp3` (192 kbps)
+- Total file sizes: master.wav 64 MB, final.wav 65 MB, final.mp3 27 MB
+- 2s silent transition inserted between tours for audible separation
 
 ### Video
 
 - Codec: H.264 video + AAC audio
 - Resolution: 1280x720 (720p)
-- Duration: ~1h target
-- Background: `background.png` with EP003 title + subtitle (to be generated)
-- Tour transitions: subtle visual change (e.g. a thin orange bar at
-  the top of the screen for tour 1, bottom for tour 2, etc., to
-  give a sense of progression without being distracting)
+- Duration: 23.6 min
+- Background: `background.png` with "JANCOVICI VS LOVINS" + "The energy debate that matters" subtitle
+- Frame rate: 25 fps
+- Bit rate: 158 kbps
 
 ### Distribution
 
-- **YouTube** : main platform, video upload (long-form 1h content is
-  monetizable)
+- **YouTube** : main platform, video upload (long-form 23 min is monetizable)
 - **Spotify / Apple Podcasts** : audio only (use final.mp3)
 - **Twitter/X clips** : 60s clips of the sharpest exchanges
-  - Targets: each debater's strongest 2-min monologue, the
-    verdict moment, the rare convergence moments
+  - Targets: Jancovici's "civilization is a thermodynamic system" opener,
+    Lovins's "10x cheaper" rebuttal, the China/solar stat clash in Tour 3,
+    the verdict convergence moment
 
 ## Metadata
 
 - **Format**: 3-voice debate (2 debaters + 1 moderator)
 - **Language**: English
-- **Duration**: ~1h (target)
+- **Duration**: 23.6 min (target was 1h, landed as a focused pilot)
 - **FPS**: 25
 - **Audio**: 24 kHz / 16-bit
 - **Video codec**: H.264
 - **Audio codec**: AAC
 - **Audio bitrate**: 192 kbps
-- **File**: `video.mp4` (~50-60 MB expected for 1h of static-image 720p)
+- **File**: `video.mp4` (26.7 MB)
+- **Segments**: 55 (12 plaidoyer + 14 réfutation + 10 question + 11 conclusion + 4 verdict + 4 outro)
+- **Voices**: am_adam (Jancovici), am_michael (Lovins), af_bella (moderator)
