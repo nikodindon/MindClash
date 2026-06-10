@@ -52,25 +52,35 @@ for i, seg in enumerate(segments, 1):
 
     # Generate
     gen = kokoro.create(text, voice=voice, speed=1.0, lang='en-us')
-    samples, sr = next(gen)
-    samples = np.asarray(samples, dtype=np.int16)
-    duration = len(samples) / sr
-    total_duration_est += duration + pause_ms / 1000.0
+    result = list(gen)
+    if isinstance(result[0], tuple):
+        samples = result[0][0]
+    else:
+        samples = result[0]
+    if not isinstance(samples, np.ndarray):
+        # Maybe multiple chunks
+        samples = np.concatenate([np.array(r[0]) if isinstance(r, tuple) else np.array(r) for r in result])
+
+    # Convert to int16
+    audio_int16 = (np.clip(samples, -1.0, 1.0) * 32767).astype('int16')
+    duration = len(audio_int16) / SAMPLE_RATE
+    total_duration_est += duration + pause_ms / 1000
 
     # Save individual segment
-    seg_path = SEGMENTS_DIR / f"seg_{seg_id:02d}_{speaker}.wav"
+    seg_path = SEGMENTS_DIR / f'seg_{seg_id:03d}_{speaker}.wav'
     with wave.open(str(seg_path), 'wb') as w:
         w.setnchannels(1)
         w.setsampwidth(2)
-        w.setframerate(sr)
-        w.writeframes(samples.tobytes())
+        w.setframerate(SAMPLE_RATE)
+        w.writeframes(audio_int16.tobytes())
 
-    # Add to master with pause
-    all_audio.append(samples)
-    pause_samples = int(SAMPLE_RATE * (pause_ms / 1000.0))
-    all_audio.append(np.zeros(pause_samples, dtype=np.int16))
+    print(f'  [{i:2d}/{len(segments)}] seg_{seg_id:03d} ({speaker:6s} {voice:10s}) {duration:5.1f}s + {pause_ms}ms pause')
 
-    print(f'  [{i:2d}/{len(segments)}] {speaker:6s} {voice} ({seg.get("emotion","?"):14s}) {duration:.1f}s + {pause_ms}ms')
+    # Add to master
+    all_audio.append(audio_int16)
+    if pause_ms > 0:
+        silence_samples = int(SAMPLE_RATE * pause_ms / 1000)
+        all_audio.append(np.zeros(silence_samples, dtype='int16'))
 
 # Concatenate master
 print(f'\nConcatenating {len(all_audio)} chunks...')
