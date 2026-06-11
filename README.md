@@ -737,7 +737,269 @@ mindclash check
 
 ---
 
-## 🎙️ Example: Full Episode Production
+## 🎙️ How to produce a new episode (the real pipeline)
+
+> **Note**: the section "🎙️ Example: Full Episode Production" below
+> describes the **ideal CLI** that the framework aspires to (but isn't
+> implemented yet — `mindclash/cli.py` is currently a stub). This
+> section documents the **actual pipeline** that has been used to
+> produce EP001, EP002 and EP003, in reproducible detail.
+
+The pipeline has 5 stages. Each stage is a standalone script in
+`scripts/`. All heavy lifting (ingest, LLM calls, TTS, ffmpeg) is done
+by external tools invoked from these scripts.
+
+### Stage 1 — Build a personality's Knowledge Base
+
+For a SOLO podcast or a DEBATE, you first need a **Knowledge Base
+(KB)** for each persona. A KB = a folder in `knowledge_base/` with:
+
+```
+knowledge_base/<category>/<person>/
+├── _index.md              # table of all sources
+├── _profile.md            # synthesized profile (8 sections, see below)
+├── articles/              # optional: written articles
+├── interviews/            # optional: written interviews
+└── lectures/              # the .md + .json outputs from YT-Insight
+    ├── reinventing-fire-2026-06-10.md
+    ├── reinventing-fire-2026-06-10.json
+    └── ...
+```
+
+**Step 1a — Ingest YouTube talks via YT-Insight** (a separate project
+at `/home/niko/YT-Insight`):
+
+```bash
+cd /home/niko/YT-Insight
+source .venv/bin/activate
+
+# YouTube has a bot-check + n-challenge that naive yt-dlp can't bypass.
+# The --cookies + --js-runtime flags were added in commit 2dc448c.
+yt-insight all "https://www.youtube.com/watch?v=VIDEO_ID" \
+  --language en \
+  --llamacpp-url http://100.118.85.70:8080 \
+  --llamacpp-timeout 7200 \
+  --depth extreme \
+  --whisper-model medium \
+  --cookies www.youtube.com_cookies.txt \
+  --output-dir outputs/<person>/out \
+  --cache-dir outputs/<person>/cache
+```
+
+**Recommended**: ingest **2-4 talks minimum** per personality. Each
+~30-min talk produces ~40-50 key points + 15+ verbatim quotes.
+
+**Step 1b — Copy outputs to the KB folder**:
+
+```bash
+cp outputs/<person>/out/*.md knowledge_base/<category>/<person>/lectures/
+cp outputs/<person>/out/*.json knowledge_base/<category>/<person>/lectures/
+# Rename to clean slugs:
+mv 2026-06-10_reinventing-fire-...md reinventing-fire-2026-06-10.md
+```
+
+**Step 1c — Write `_profile.md`** with these 8 sections (in order):
+
+1. **Bio express** (2-3 lines)
+2. **Thèse centrale (en 1 phrase)** — one-sentence summary
+3. **5 thèses structurantes** (by source talk)
+4. **Concepts signature** (table: term + definition)
+5. **Red lines** (self-critique) — generate via Qwen if not present
+6. **Questions ouvertes** (for the debate)
+7. **Citations verbatim** (selection of 3-5 from the sources)
+8. **Sources (rappel)** — link to `_index.md`
+
+**Step 1d — Update `_index.md`** with a table of all sources (filename,
+date, topic, duration, KP count, quotes count) and a cross-reference
+of which topics are covered by which talk.
+
+### Stage 2 — Generate the podcast script (LLM via Qwen)
+
+For a **SOLO podcast** (e.g. EP002 Lovins), use
+`scripts/generate_lovins_script.py` as a template. For a **DEBATE**
+(e.g. EP003), use `scripts/generate_debate_ep003.py`.
+
+**Pattern for both**:
+- One call to Qwen **per section** (intro / N thesis sections / outro
+  for solo, or 4 Arena tours + verdict for debate)
+- Cumulative context: last 10-15 segments fed back for narrative
+  continuity
+- Each call produces a JSON array of N segments matching the schema
+- Final assembly: renumber all segments 1..N, attach the
+  post_production_notes
+
+**Schema** (shared with EP001):
+```json
+{
+  "episode": "EP00X",
+  "title": "...",
+  "duration_target_seconds": 1450,
+  "language": "en",
+  "format": "interview" | "debate_cast",
+  "speakers": {"host": "Alex (am_adam)", "expert": "Marc (am_michael)"}
+            | {"debater_a": "...", "debater_b": "...", "moderator": "..."},
+  "voice_map": {"host": "am_adam", ...},
+  "sources": [...],
+  "segments": [
+    {"id": 1, "section": "intro", "speaker": "host", "text": "...",
+     "emotion": "friendly", "pause_after_ms": 700},
+    ...
+  ],
+  "post_production_notes": {...}
+}
+```
+
+**Critical Qwen settings** (learned the hard way):
+```python
+payload = {
+    "model": "qwen3",
+    "messages": [{"role": "user", "content": prompt}],
+    "max_tokens": 4000,
+    "temperature": 0.7,
+    "chat_template_kwargs": {"enable_thinking": False},  # CRITICAL
+}
+```
+
+Without `enable_thinking=False`, Qwen3 returns empty strings while
+still charging tokens.
+
+**Critical prompt-size rule**: with both profile.md files in full
+(~8KB each), the prompt balloons to ~17KB and Qwen times out at 300s
+on the distant server (~7 tok/s). Keep prompts under 12KB by
+**compacting** the KB content: only include the key sections (thèse
+centrale, 5 thèses, concepts, red lines, citations), skip bio.
+
+**Runtime**: ~20-30 min for a full episode (5-7 Qwen calls).
+
+### Stage 3 — Render TTS via Kokoro
+
+`scripts/produce_ep00X.py` reads the `script.json`, maps each
+`speaker` to a Kokoro voice, renders N wav files in `audio_segments/`,
+concatenates them with the requested `pause_after_ms`, and writes
+`master.wav`.
+
+**Voice mapping** (Kokoro 11 voices in `models/kokoro/voices.bin`):
+
+| Role | Voice | Used in |
+|------|-------|---------|
+| Host (Alex) / Debater A (Jancovici) | `am_adam` | EP001, EP002, EP003 |
+| Expert (Marc) / Debater B (Lovins) | `am_michael` | EP001, EP002, EP003 |
+| Moderator (Bella) | `af_bella` | EP003 (first debate) |
+
+Other voices available (unused so far): `am_eric`, `am_liam`,
+`am_onyx`, `am_santa` (males) and `af_heart`, `af_jessica`,
+`af_kore`, `af_nova`, `af_river`, `af_sarah`, `bf_emma`,
+`bf_isabella` (females).
+
+**Critical Kokoro API detail**: `kokoro.create()` returns a list, not
+a generator. Use `list(gen)` then check `isinstance(result[0], tuple)`.
+The naive `next(gen)` crashes with "tuple object is not an iterator".
+See `produce_ep002.py` for the correct pattern.
+
+**Runtime**: ~10-15 min for 64-100 segments on the local GPU (GTX
+1050). The CUDA-accelerated faster-whisper pipeline (used in
+YT-Insight ingest) is much faster than CPU llama.cpp for ASR, but
+Kokoro runs in a similar ballpark on GPU.
+
+### Stage 4 — Mix and render video
+
+`scripts/mix_ep00X.py`: concatenates master.wav with intro/outro music
+beds (currently silent files in `assets/music/`). **As of June 10,
+EP003's mix skips the beds** so the audio starts immediately. EP001
+and EP002 still have the silent beds (10s intro silence — kept for
+backward compat).
+
+`scripts/render_video_ep00X.py`: ffmpeg loop-input on the
+`background.png` + master audio → 1280x720 H.264 + AAC mp4.
+
+**Background image** (generated before the video stage):
+- **Solo podcasts** → `scripts/generate_background.py [TOPIC]
+  --subtitle "A podcast on X" --out episodes/EP00X/background.png`
+  (orange accent on dark background)
+- **Debates** → `scripts/generate_debate_background.py --left
+  photo1.png --right photo2.png --name-left "..." --name-right "..."
+  --number N --out episodes/EP00X/background.png` (cool blue, 2
+  protagonist photos, "DEBATE NUMBER N" callout)
+
+### Stage 5 — YouTube publication
+
+Update `episodes/EP00X_*/show_notes.md` with real timestamps
+(computed from the final.wav duration), the actual scoring (for
+debates), and all production metadata. Then upload to YouTube.
+
+### Concrete example: producing EP002 (Lovins solo, 20.3 min)
+
+```bash
+# A) Build Lovins KB (4 talks ingested via YT-Insight, then synthesized)
+#    See Stage 1 above. Result:
+#    knowledge_base/science/lovins/_profile.md (8 sections, 178 lines)
+#    knowledge_base/science/lovins/_index.md (4 sources table)
+#    knowledge_base/science/lovins/lectures/{4 talks}.md + .json
+
+# B) Generate the script
+cd /home/niko/MindClash
+source .venv/bin/activate
+python scripts/generate_lovins_script.py
+# 7 Qwen calls (intro / 5 thesis sections / outro), ~20 min
+# → episodes/EP002_lovins-synthesis/script.json (64 segments, 29 KB)
+
+# C) Render TTS
+python scripts/produce_ep002.py
+# ~10 min on GPU
+# → episodes/EP002_lovins-synthesis/audio_segments/seg_NNN_*.wav (64 files)
+# → episodes/EP002_lovins-synthesis/master.wav (54.7 MB)
+
+# D) Mix + video
+python scripts/mix_ep002.py        # → final.wav + final.mp3
+python scripts/render_video_ep002.py   # → video.mp4 (22.9 MB)
+
+# E) Publish: upload video.mp4 to YouTube, copy/paste show_notes.md
+#    into the description, set thumbnail.
+```
+
+Total runtime: **~30-40 min from green light to publication-ready**.
+The LLM call stage is the bottleneck (5-7 Qwen calls × 2-5 min each).
+
+### Concrete example: producing EP003 (Jancovici vs Lovins debate, 24.1 min)
+
+```bash
+# A) Build both KBs (Jancovici has 8 cours Mines, Lovins has 4 talks)
+
+# B) Generate the debate script
+python scripts/generate_debate_ep003.py
+# 5 Qwen calls (4 tours plaidoyer/refutation/question/conclusion +
+#  1 verdict), ~22 min
+# → episodes/EP003_jancovici-vs-lovins/script.json (59 segments, 35 KB)
+# → episodes/EP003_jancovici-vs-lovins/debate_raw.json (Arena format)
+
+# C) Render TTS (3 voices, ~10 min)
+python scripts/produce_ep003.py
+
+# D) Generate the debate background
+python scripts/generate_debate_background.py \
+  --left /home/niko/YT-Insight/outputs/janco.png \
+  --right /home/niko/YT-Insight/outputs/lovins.png \
+  --name-left "Jean-Marc Jancovici" \
+  --name-right "Amory Lovins" \
+  --number 1 \
+  --out episodes/EP003_jancovici-vs-lovins/background.png
+
+# E) Mix + video
+python scripts/mix_ep003.py
+python scripts/render_video_ep003.py
+
+# F) Publish
+```
+
+---
+
+## 🎙️ Example: Full Episode Production (aspirational CLI)
+
+> **This section describes the ideal CLI that the framework aspires
+> to build. The `mindclash ingest` and `mindclash debate` commands
+> below are NOT yet implemented in `mindclash/cli.py` (which is
+> currently a stub). For the actual production pipeline that has been
+> used, see the "How to produce a new episode" section above.**
 
 ```bash
 # Step 1: Build Jancovici's knowledge base
